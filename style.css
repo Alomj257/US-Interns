@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.mainbox {
+    display: flex;
+    height: 100vh;
+}
+.fristbox {
+    background-color: rgb(252, 251, 251);
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.innerbox {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.line1 h1 {
+    font-size: 7vh;
+}
+.line1 h2 {
+    font-size: 4.5vh;
+}
+.number1 {
+    text-align: center;
+    border-radius: 50%;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    color: white;
+    background-color: black;
+}
+.container {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    margin: 15vh auto;
+}
+.circle {
+    left: 10px;
+    top: 10;
+    width: 6vh;
+    height: 6vh;
+    letter-spacing: ;
+    background-color: black;
+    border-radius: 90%;
+    color: white;
+    text-align: center;
+    font-size: 6vh;
+    line-height: 6vh;
+    font-family: "poppins", Helvetica, sans-serif;
+}
+.line {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    width: 50vh;
+    height: 1vh;
+    border-radius: 30%;
+    background-color: black;
+}
+.form-container {
+    width: 40%;
+    padding: 20px; 
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+   
+}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    
+  
+}
+.forminfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.formbox {
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.gradient-text {
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
