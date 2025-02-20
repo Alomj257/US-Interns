@@ -73,7 +73,7 @@ body{
     padding-left: 5vh;
 }
 .container h2{
-    text-align: ;
+    text-align:center ;
     /* align-items: left; */
     padding-left: 25vh;
     padding-top: 4vh;
@@ -102,7 +102,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 1000vh;
+    width: 100vh;
     margin: 10vh;
     margin-top: 5vh;
     border-radius: 1rem;
