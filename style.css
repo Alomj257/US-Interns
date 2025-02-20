@@ -191,3 +191,14 @@ body{
     background-color:rgb(18, 133, 205) ;
     transition: 0.3s;
 }
+/* .wave2{
+    display: inline-flex;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    bottom: 0;
+}
+.wave3{
+    display: block;
+    z-index: -1;
+} */
