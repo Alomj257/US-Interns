@@ -87,46 +87,107 @@ body{
     padding-left:19vh ;
 }
 .secondbox{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height:90vh;
+    justify-content: center;
+    height: 90vh;
+    width: 90vh;
+    margin: 10vh;
+    margin-top: 5vh;
+    border-radius: 1rem;
+    background-color: antiquewhite;
 }
-.formcontainer h1{
-    text-align: center;
-    background-image: linear-gradient(90deg,red,rgb(245, 226, 14));
-    background-clip: text;
-    color: transparent;
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: 6vh;
-    padding-top: 6vh;
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 1000vh;
+    margin: 10vh;
+    margin-top: 5vh;
+    border-radius: 1rem;
+    gap: 2rem;
+    max-width: 350px;
+    /* background-color: aqua; */
 
 }
-.formcontainer{
-    background-color: aquamarine;
-    height:90vh;
-    width:100vh;
-    margin: 6vh;
-    border-radius: 1rem;
-    /* margin: 10vh; */
-    /* padding: 10vh; */
-}
-.forminfo{
-    /* background-color: aqua; */
-    height: 60%;
-    align-items: center;
-    padding: 10vh;
-    /* margin-top: 6vh; */
-}
-.wave2{
-    display: block;
-  position: relative;
-  /* padding-bottom: 50vh; */
+.title{
+    font-size:6vh;
+    background-image: -webkit-linear-gradient(90deg,red,yellow);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    text-align:center ;
+    margin-top: 2vh;
+
 }
 .form-group{
-    /* line-height: 1rem;
-     */
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
 }
-.form-group input{
-    height: 1vh;
-    width: 80%;
+.form label{
+    position: relative;
+}
+.form label input,select{
+    width: 100%;
+    height:5vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.form label textarea{
+    width: 100%;
+    height:10vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.form-group input+span,textarea+span{
+    position: absolute;
+    left:10px;
+    top:15px;
+    color: black;
+    font-size: 1rem;
+    opacity: 50%;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.form label input:placeholder-shown +span{
+    top:10px;
+    font-size: 0.9rem;
+}
+.form label input:focus +span,
+.form label input:valid + span{
+    top:20px;
+    opacity: 30%;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.form label textarea:placeholder-shown + span{
+    top:10px;
+    font-size: 1rem;
+}
+.form label textarea:focus +span,
+.form label textarea:valid + span{
+    top:60px;
+    opacity: 30%;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.sendmessage{
+    border: none;
+    outline:none;
+    background: rgb(18, 164, 255);
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1rem;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+.sendmessage:hover{
+    background-color:rgb(18, 133, 205) ;
+    transition: 0.3s;
 }
