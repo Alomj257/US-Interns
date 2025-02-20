@@ -36,11 +36,25 @@ body {
     position: relative;
     width: 100px;
     height: 30px;
-    margin: 15vh auto;
+    margin-left: 20vh;
+    margin-top: 15vh;
+
+}
+
+.container h2{
+    text-align: center;
+    padding-left: 25vh;
+    padding-top: 4vh;
+    opacity: 50%;
+
+}
+#email{
+    padding-left: 20vh;
 }
 .circle {
-    left: 10px;
-    top: 10;
+    position: absolute;
+    left: 0px;
+    top: 0;
     width: 6vh;
     height: 6vh;
     letter-spacing: ;
