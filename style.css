@@ -7,7 +7,7 @@ body{
     flex-direction: row;
 }
 .fristbox{
-    background-color: aqua;
+    /* background-color: aqua; */
     height:100vh;
     width: 50%;
 }
@@ -45,7 +45,7 @@ body{
     /* align-items:center; */
 }
 .circle{
-    /* position:relative; */
+    position:absolute;
     left:0;
     top: 0;
     width: 6vh;
@@ -55,7 +55,7 @@ body{
     color: white;
     text-align: center;
     font-size: 5vh;
-    line-height: 4vh;
+    /* line-height: 4vh; */
     font-family: Arial, Helvetica, sans-serif;
     /* z-index: -1; */
 }
@@ -67,4 +67,66 @@ body{
     height: 1vh;
     border-radius: 30%;
     background-color: black;
+}
+.words{
+    align-items: center;
+    padding-left: 5vh;
+}
+.container h2{
+    text-align: ;
+    /* align-items: left; */
+    padding-left: 25vh;
+    padding-top: 4vh;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wave{
+    height: 10vh;
+}
+#email{
+    padding-left:19vh ;
+}
+.secondbox{
+    align-items: center;
+    height:90vh;
+}
+.formcontainer h1{
+    text-align: center;
+    background-image: linear-gradient(90deg,red,rgb(245, 226, 14));
+    background-clip: text;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 6vh;
+    padding-top: 6vh;
+
+}
+.formcontainer{
+    background-color: aquamarine;
+    height:90vh;
+    width:100vh;
+    margin: 6vh;
+    border-radius: 1rem;
+    /* margin: 10vh; */
+    /* padding: 10vh; */
+}
+.forminfo{
+    /* background-color: aqua; */
+    height: 60%;
+    align-items: center;
+    padding: 10vh;
+    /* margin-top: 6vh; */
+}
+.wave2{
+    display: block;
+  position: relative;
+  /* padding-bottom: 50vh; */
+}
+.form-group{
+    /* line-height: 1rem;
+     */
+    padding: 5px;
+}
+.form-group input{
+    height: 1vh;
+    width: 80%;
 }
