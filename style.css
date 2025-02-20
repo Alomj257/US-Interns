@@ -113,7 +113,7 @@ body{
 }
 .title{
     font-size:6vh;
-    background-image: -webkit-linear-gradient(90deg,red,yellow);
+    background-image: -webkit-linear-gradient(left,red,yellow);
     background-clip: text;
     color: transparent;
     position: relative;
