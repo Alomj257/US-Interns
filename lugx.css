@@ -5,7 +5,7 @@ body{
     /* background-color: blue; */
 }
 header{
-    background-color: blue;
+    background-color:rgb(74, 54, 11);
 }
 li, a, button{
     font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +57,8 @@ header{
     background-color: rgb(146, 19, 45);
 }
 .fristsection{
-    background:url("banner-bg.jpg");
+    background:url("1371343.jpeg");
+    /* opacity: 80%; */
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 6rem;
