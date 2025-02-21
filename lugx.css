@@ -4,11 +4,14 @@ body{
     padding: 0;
     /* background-color: blue; */
 }
+header{
+    background-color: blue;
+}
 li, a, button{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: rgb(199, 96, 96);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 header{
@@ -44,7 +47,7 @@ header{
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: crimson;
+    background-color:chocolate;
     color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
@@ -52,4 +55,124 @@ header{
 }
 .button:hover{
     background-color: rgb(146, 19, 45);
+}
+.fristsection{
+    background:url("banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    padding: 10rem 0;
+    color:rgb(255, 255, 255);
+}
+.container{
+    display: flex;
+    
+}
+.main_banner{
+    display: flex;
+   
+    justify-content: start;
+    align-items: center;
+}
+.main_banner_content{
+    width: 50%;
+    padding-left: 10rem;
+}
+.content_rapper{
+    max-width: 40rem;
+    margin-bottom: 4rem;
+}
+.contant_rapper h1,h2,p{
+    font-family:sans-serif;
+}
+.contant_rapper h2{
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    font-size:26px;
+}
+.contant_rapper h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.contant_rapper p{
+    line-height: 1;
+    font-size: 14px;
+}
+.main_banner_searchbutton{
+    max-width: 28rem;
+    height: 50px;
+    margin-top: 3rem;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.main_banner_searchbutton input{
+    border: none;
+    outline: none;
+    width: 65%;
+    padding: 0 0 0 2rem;
+    font-size: 15px;
+    background-color: antiquewhite;
+}
+.main_banner_searchbutton button{
+    border: none;
+    outline: none;
+    background-color: chocolate;
+    width: 35%;
+    height: 100%;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.main_banner_img{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+ .right_img{
+    width: 60%;
+    position: relative;
+}
+ .price{
+    background-color: #0071f8;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ .offer {
+    background-color: #ee626b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 1rem;
+    font-size: 30px;
+    border-radius: 50%;
+    position: absolute;
+    font-family: sans-serif;
+    left: -20px;
+    bottom: -20px;
+}
+
+.right_img img {
+    width: 100%;
+    border-radius: 1.5rem;
 }
