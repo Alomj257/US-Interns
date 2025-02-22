@@ -258,23 +258,23 @@ header{
     transition: ease-out 0.3s;
     /* margin-left: 5rem;
     margin-right: 5rem; */
+    .icons{
+        color: #005eff;
+        font-size: 4rem;
+        align-items: center;
+    }
+    .innerbox h3{
+        text-align: center;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        /* position: relative; */
+        /* translate: 15% 25%; */
+    }
+    .icons{
+        position: relative;
+       translate: 40% 60%;
+        justify-content: center;
+        
+      }
 }
-.icons i:hover{
-    color: #005eff;
-    font-size: 4rem;
-    align-items: center;
-}
-.innerbox h3:hover{
-    text-align: center;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    /* position: relative; */
-    /* translate: 15% 25%; */
-}
-.icons:hover{
-    position: relative;
-   translate: 40% 70%;
-    justify-content: center;
-    
-  }
