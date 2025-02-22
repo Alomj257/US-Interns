@@ -38,7 +38,10 @@ header{
     transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover{
- color:black;
+ color:rgb(0, 0, 0);
+ background-color:white ;
+ padding: 0.5rem;
+ border-radius: 5rem;
 }
 .button{
     margin-left: 1rem;
@@ -54,11 +57,11 @@ header{
     transition: all 0.3s ease 0s;
 }
 .button:hover{
-    background-color: rgb(146, 19, 45);
+    background-color: blue
 }
 .fristsection{
     background:url("1371343.jpeg");
-    /* opacity: 80%; */
+    opacity: 90%;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 6rem;
@@ -138,6 +141,10 @@ header{
     transition: all 0.6s;
     cursor: pointer;
 }
+.searchbutton:hover{
+    background-color: #0071f8;
+    color: #fff;
+}
 .main_banner_img{
     width: 75%;
     display: flex;
@@ -180,3 +187,94 @@ header{
     width: 100%;
     border-radius: 1.5rem;
 }
+.boxcollection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15rem;
+    /* background-color: #0071f8; */
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 5rem;
+    /* border-spacing: 1rem; */
+    /* margin-left: 5rem; */
+    /* margin-right: 5rem; */
+   
+}
+.boxcollectionboxes{
+ 
+    width: 15rem;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 2px 2px 2px 2px;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+}
+.material-symbols-outline span{
+    color: white;
+    background-color: #fff;
+}
+.icons{
+  position: relative;
+ translate: 40% 50%;
+  justify-content: center;
+  
+}
+
+.innerbox{
+    align-items: center;
+    justify-content: center;
+}
+.icons i{
+    color: #005eff;
+    font-size: 3.5rem;
+    align-items: center;
+}
+.innerbox h3{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+    /* translate: 15% 25%; */
+}
+.boxcollectionboxes:hover{
+ 
+    width: 16rem;
+    height: 90%;
+    background-color: rgb(251, 221, 199);
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 2px 2px 2px 2px;
+    transition: ease-out 0.3s;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+}
+.icons i:hover{
+    color: #005eff;
+    font-size: 4rem;
+    align-items: center;
+}
+.innerbox h3:hover{
+    text-align: center;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+    /* translate: 15% 25%; */
+}
+.icons:hover{
+    position: relative;
+   translate: 40% 70%;
+    justify-content: center;
+    
+  }
