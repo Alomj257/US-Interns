@@ -279,3 +279,42 @@ header{
         
       }
 }
+.section2{
+    margin-left: 4.3rem;
+}
+.section2 h2,h6{
+    margin-left: 3rem;
+}
+
+.trendinggamesection{
+    height: 18rem;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* padding-left: 4.7rem; */
+    /* padding-right: 5rem; */
+}
+.gameoption{
+    /* display: flex; */
+    height: 17rem;
+    min-width: 22%;
+    background-color: red;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    justify-content: space-between;
+}
+.trendinggamesection::-webkit-scrollbar{
+    width: 0;
+}
+.gameoptionimage{
+        position: relative;
+        height: 75%;
+        width: 100%;
+}
+.gameoptionimage img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
