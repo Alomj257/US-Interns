@@ -38,6 +38,9 @@ header{
    transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover{
+   background-color: #ee626b;
+   padding: 0.5rem;
+   border-radius: 5rem;
 color:black;
 }
 .button{
@@ -57,17 +60,17 @@ color:black;
    background-color: rgb(146, 19, 45);
 }
 
-.first1 {background:url("ybRWuGmpZP8Gf67RFY5YtW-320-80.jpg");
+.first1 {background:url("assassin-s-creed-origins-aya-of-alexandria-3157pzwku19xufyk.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 border-bottom-left-radius: 6rem;
 border-bottom-right-radius: 6rem;
-padding: 8rem 0;
+padding: 10rem 0;
 color:rgb(255,255,255);
 
 }
 .first1 .url{
-opacity:50%;
+opacity:80%;
 }
 .cointainer{
    display: flex;
@@ -81,21 +84,28 @@ opacity:50%;
 }
 .mainbg_content{
    width: 50%;
-   padding-left: 10rem;
+   padding-left: 4rem;
 } 
 .mainbg_content.text h1,h2,p{
-   font-family: poopins;
+   font-family: sans-serif;
 
 }
-.mainbg_content.text h1{
+.mainbg_content.text h2{
    font-weight: normal;
-   margin-bottom: 1rem;
-   font-size: 30px;
+   margin-bottom: 1.5rem;
+   font-size: 26px;
 }
-.mainbg_content.text p1{
-   line-height: 1.5;
-   font-size: 16px;
+.mainbg_content.text h1{
+   font-size: 26px;
+   font-weight: normal;
+   margin-bottom: 1.5rem;
 }
+.content.text p{
+   line-height: 1;
+   font-size: 14px;
+}
+
+
 /* hhhhhh */
 
 
@@ -109,6 +119,11 @@ opacity:50%;
    align-items: center;
    border-radius: 2rem;
    overflow: hidden;
+}
+.jakmak:hover{
+   /* padding: 0 1rem; */
+   background-color: #ee626b;
+
 }
 .searchnow input{
    border: none;
@@ -148,11 +163,14 @@ opacity:50%;
    padding: 0.6rem 1rem;
    border-radius: 2rem;
    position: absolute;
+   margin-top: 15rem;
+   margin-right: 12rem;
    top: 10px;
    right: 10px;
    font-family: sans-serif;
    font-weight: bold;
    font-size: 20px;
+ 
 }
 
 .offer {
@@ -175,3 +193,54 @@ opacity:50%;
    width: 60%;
    border-radius: 1rem;
 }
+.buttoneffect:hover{
+   background-color: rgb(146, 19, 45);
+   padding: 1rem;
+   border-radius: 1rem;
+}
+/* nextsection */
+ 
+/* height: 50%; */
+/* width: 50%; */
+/* background-color:blueviolet; */
+
+ 
+ 
+.features{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   margin-top: -70px;
+}
+
+.feature__item{
+   padding: 2rem 4rem;
+   background-color: #fff;
+   width: calc(25% - 12px);
+   text-align: center;
+   box-shadow: 0 0 14px lightgray;
+   border-radius: 1.8rem;
+   cursor: pointer;
+}
+
+
+.feature__image{
+   width: 90px;
+   height: 90px;
+   margin: 0 auto;
+   background-color: royalblue;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1.5rem;
+   transition: all 0.6s;
+}
+
+.feature__item:hover .feature__image{
+   background-color: #ee626b;
+}
+
+
+

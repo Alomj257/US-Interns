@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "US-Interns",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../Users/Polna/Downloads/Lugx-gaming-shop-main/Lugx-gaming-shop-main/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "US-Interns"
+	}
+}
