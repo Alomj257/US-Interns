@@ -242,5 +242,128 @@ opacity:80%;
    background-color: #ee626b;
 }
 
+/* Nextpart */
 
+.trending_GAME{
+   margin-top: 6rem;
+}
+
+.section__AR_BITRE_PART{
+   color: #ee626b;
+   font-size: 16px;
+   margin-bottom: 1.5rem;
+}
+
+
+.trend_TOPS_SECT .section__borotittle{
+   font-size: 38px;
+}
+
+.trend_TOPS_SECT{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+
+.GAME__link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 8rem;
+   width: 100%;
+   text-decoration: none;
+   color: #fff;
+   background-color: #ee626b;
+   padding: 1rem;
+   border-radius: 2rem;
+   font-weight: bold;
+   transition: .6s;
+}
+
+.trendgame__link:hover{
+   background-color: #0171f9;
+}
+
+.trendgames{
+   margin-top: 4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.trendgame__items{
+   border-radius: 2rem;
+   background-color: #eeeeee;
+   width: calc(25% - 12px);
+   position: relative;
+   overflow-x: auto;
+}
+
+.trendgame__items .priceeee{
+   background-color: #0071f8;
+   width: 55px;
+   padding: 0.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 1.5;
+   border-radius: 1rem;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+}
+
+.trendgame__items .price span {
+   color: #fff;
+   font-weight: bold;
+}
+
+.trendgame__items img{
+   width: 100%;
+   border-radius:2rem ;
+}
+
+.trendgame__content{
+   padding: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+}
+
+.trendgame__content h3 span {
+   font-size: 16px;
+   color: #7a7a7a;
+   font-weight: normal;
+}
+
+.trendgame__content h3 {
+   line-height: 1.5;
+   font-size: 18px;
+   transition: all .6s;
+}
+
+.shopp__icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   width: 40px;
+   height: 40px;
+   background-color: #ee626b;
+   border-radius: 50%;
+   transition: all .6s;
+   color: #000203;
+}
+
+.trendgame__items:hover .trendgame__content h3{
+   color: #0071f8;
+}
+
+.trendgame__items:hover .shopp__icon {
+   background-color: #0071f8;
+   color: #fff;
+}
 
