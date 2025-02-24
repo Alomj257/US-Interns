@@ -60,6 +60,10 @@ header{
 .button:hover{
     background-color: blue
 }
+
+/* setion1 */
+
+
 .fristsection{
     background:url("1371343.jpeg");
     opacity: 90%;
@@ -279,10 +283,18 @@ header{
         
       }
 }
+
+
+
+
+/* section2 */
+
+
+
 .section2{
     margin-left: 4.3rem;
 }
-.section2 h2,h6{
+.Trending{
     margin-left: 3rem;
 }
 
@@ -298,8 +310,8 @@ header{
 .gameoption{
     /* display: flex; */
     height: 17rem;
-    min-width: 22%;
-    background-color: red;
+    min-width:22%;
+    background-color: rgb(225, 225, 225);
     border-radius: 2rem;
     margin-left: 3rem;
     justify-content: space-between;
@@ -317,4 +329,84 @@ header{
     height: 100%;
     width: 100%;
     border-radius: 2rem;
+}
+.gameoption h2,h6{
+    margin: 0;
+    padding: 0;
+}
+.gameoptiontext{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.gameoption i{
+    position: relative;
+    left: 35%;
+    font-size: large;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    background-color:  #ec323e;
+    color: #000000;
+}
+.gameoptionimage h2{
+    /* margin-bottom: 2rem; */
+    padding: 0.5rem;
+    position: absolute;
+    left:75%;
+    top: 15%;
+    background-color: #005eff;
+    color: #fff;
+    border-radius: 1rem;
+
+}
+.gameoption:hover{
+    i{
+        position: relative;
+        left: 35%;
+        font-size: large;
+        padding: 0.7rem;
+        border-radius: 2rem;
+        background-color:  blue;
+        color: #ffffff;
+    }
+    .gameoptiontext h2{
+        color: #005eff;
+    }
+
+}
+
+
+
+/* section3 */
+
+
+.section3{
+    background-color: rgb(168, 176, 182);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    border-radius: 2rem;
+}
+.topgames{
+    display: grid;
+    grid-row: 3;
+    height: 15rem;
+    width: 100%;
+    background-color: #005eff;
+}
+.topgameoption{
+    min-height: 10rem;
+    min-width:10rem;
+    background-color: #ec323e;
+}
+.topgameoptionimage{
+    position: relative;
+    height: 75%;
+    width: 100%;
+}
+.topgameoptionimage img{
+position: relative;
+height: 100%;
+width: 100%;
+border-radius: 2rem;
 }
