@@ -387,26 +387,58 @@ header{
     padding-bottom: 6rem;
     border-radius: 2rem;
 }
+.section3 .section3text{
+    margin-left: 4rem;
+}
 .topgames{
-    display: grid;
-    grid-row: 3;
-    height: 15rem;
+    height: 18rem;
     width: 100%;
-    background-color: #005eff;
+    display: flex;
 }
 .topgameoption{
-    min-height: 10rem;
-    min-width:10rem;
-    background-color: #ec323e;
+    height: 20rem;
+    min-width:10%;
+    background-color: rgb(227, 224, 224);
+    border-radius: 2rem;
+    margin-left: 3.6rem;
+    justify-content: space-between;
 }
 .topgameoptionimage{
-    position: relative;
-    height: 75%;
+    height: 60%;
     width: 100%;
 }
 .topgameoptionimage img{
-position: relative;
-height: 100%;
-width: 100%;
-border-radius: 2rem;
+   height: 100%;
+   width: 100%;
+   border-radius: 2rem;
+}
+.topgameoptiontext{
+    padding-top: 3rem;
+}
+.topgameoptiontext h6{
+    text-align: center;
+    line-height: 0;
+    gap: 0.5rem;
+}
+.topgameoptiontext h2{
+    text-align: center;
+    line-height: 0;
+    gap: 0.5rem;
+}
+.topgameoptiontext button{
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    margin-left: 25%;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: #ec323e;
+}
+.viewall{
+    position: absolute;
+    left: 90%;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #ec323e;
+    border-radius: 2rem;
+    border-style:none;
 }
