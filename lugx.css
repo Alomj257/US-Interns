@@ -293,7 +293,7 @@ header{
 
 .section2{
     margin-left: 4.3rem;
-    padding-right:7em
+    padding-right:7em;
 }
 .Trending{
     margin-left: 3rem;
@@ -384,12 +384,14 @@ header{
 
 
 .section3{
-    background-color: rgb(168, 176, 182);
+    background-color: rgb(225, 228, 230);
     margin-top: 10rem;
     margin-bottom: 10rem;
     padding-top: 4rem;
     padding-bottom: 6rem;
     border-radius: 2rem;
+    padding-left:3rem;
+    padding-right:7rem;
 }
 .section3 .section3text{
     margin-left: 4rem;
@@ -400,9 +402,9 @@ header{
     display: flex;
 }
 .topgameoption{
-    height: 20rem;
-    min-width:10%;
-    background-color: rgb(227, 224, 224);
+    height: 19rem;
+    min-width:12%;
+    background-color: rgb(205, 202, 202);
     border-radius: 2rem;
     margin-left: 3.6rem;
     justify-content: space-between;
@@ -430,7 +432,7 @@ header{
     gap: 0.5rem;
 }
 .topgameoptiontext button{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 0.5rem;
     margin-left: 25%;
     border-radius: 2rem;
@@ -439,16 +441,17 @@ header{
 }
 .viewall{
     position: absolute;
-    left: 90%;
+    left: 85%;
     padding: 1rem;
     color: #ffffff;
     background-color: #ec323e;
     border-radius: 2rem;
     border-style:none;
+
 }
 .viewless{
     position: absolute;
-    left: 90%;
+    left: 85%;
     bottom: unset;
     padding: 1rem;
     color: #ffffff;
