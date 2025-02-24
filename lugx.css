@@ -377,6 +377,9 @@ header{
 
 
 /* section3 */
+.container3{
+    margin-bottom: 5rem;
+}
 
 
 .section3{
@@ -436,6 +439,16 @@ header{
 .viewall{
     position: absolute;
     left: 90%;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #ec323e;
+    border-radius: 2rem;
+    border-style:none;
+}
+.viewless{
+    position: absolute;
+    left: 90%;
+    bottom: unset;
     padding: 1rem;
     color: #ffffff;
     background-color: #ec323e;
