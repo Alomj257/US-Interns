@@ -82,30 +82,95 @@
 // callMe()
 
 
-let a = 100;
-console.log(typeof(a))
-let b = "Niloy";
-console.log(typeof(b))
-let c = true;
-console.log(typeof(c))
-let d;
-console.log(typeof(d))
-let e = null;
-console.log(typeof(e))
-let f = 653658372686458675984795;
-console.log(typeof(f));
+// let a = 100;
+// console.log(typeof(a))
+// let b = "Niloy";
+// console.log(typeof(b))
+// let c = true;
+// console.log(typeof(c))
+// let d;
+// console.log(typeof(d))
+// let e = null;
+// console.log(typeof(e))
+// let f = 653658372686458675984795;
+// console.log(typeof(f));
 
 
 
-const student = {
-    name: "JAHANGIR",
-    roll_no: "ECE194008",
-    age: 27,
-    department: "IT",
-    isEmpoyee: true
+// const student = {
+//     name: "JAHANGIR",
+//     roll_no: "ECE194008",
+//     age: 27,
+//     department: "IT",
+//     isEmpoyee: true
+// }
+
+// console.log(student);
+// console.log(typeof(student));
+// console.log(typeof(student.name));
+// console.log(typeof(student.age));
+
+
+// Object in js
+
+// Create an object using object literal syntax
+
+// const Person = {
+//     fullName : "Niloy",
+//     age: 25,
+//     gender: "Male",
+//     profession: "Developer",
+//     array: [1,2,3,4],
+//     chield: {
+//         name: "Alom",
+//         age: 23
+//     }
+// };
+
+// console.log(Person)
+// console.log(typeof(Person));
+// console.log(typeof(Person.chi))
+
+
+// Using new Object() syntax
+
+// const Person = new Object();
+// Person.name = "Jahangir",
+// Person.age = 25,
+// Person.gender = "Male",
+// Person.profession = "Developer",
+// Person.isEmployee = true
+
+// console.log(Person);
+// console.log(typeof(Person.isEmployee))
+
+
+// Using constructor
+
+// function Person(name, age, profession){
+// this.name = name,
+// this.age = age,
+// this.profession = profession
+// }
+
+// const person = new Person("Suagata", 23, "Developer")
+
+// console.log(typeof(person));
+// console.log(person);
+
+
+
+const Employee = {
+    id: "EMP01",
+    name: "Employee",
+    salary: 500000,
 }
 
-console.log(student);
-console.log(typeof(student));
-console.log(typeof(student.name));
-console.log(typeof(student.age));
+console.log(Employee);
+// console.log(Employee.id, Employee.name, Employee.salary);
+
+Employee.name = "jahangir";
+Employee["name"] = "NILOY";
+console.log(Employee.id);
+
+console.log(Employee["id"]);
