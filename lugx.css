@@ -298,6 +298,10 @@ header{
 .Trending{
     margin-left: 3rem;
 }
+.Trendingh6{
+    margin-left: 3rem;
+    color: #ec323e;
+}
 
 .trendinggamesection{
     height: 18rem;
@@ -338,6 +342,9 @@ header{
 .gameoptiontext{
     margin-top: 10px;
     margin-left: 15px;
+}
+.gameoptiontext h6{
+   opacity: 50%;
 }
 .gameoption i{
     position: relative;
@@ -396,6 +403,10 @@ header{
 .section3 .section3text{
     margin-left: 4rem;
 }
+.section3texth6{
+    margin-left: 4rem;
+    color: #ec323e;
+}
 .topgames{
     height: 18rem;
     width: 100%;
@@ -419,12 +430,13 @@ header{
    border-radius: 2rem;
 }
 .topgameoptiontext{
-    padding-top: 3rem;
+    padding-top: 2rem;
+
 }
 .topgameoptiontext h6{
     text-align: center;
-    line-height: 0;
-    gap: 0.5rem;
+    line-height: 1rem;
+    opacity: 50%;
 }
 .topgameoptiontext h2{
     text-align: center;
@@ -458,4 +470,13 @@ header{
     background-color: #ec323e;
     border-radius: 2rem;
     border-style:none;
+}
+.viewall:hover{
+    background-color: #005eff;
+}
+.viewless:hover{
+    background-color: #005eff;
+}
+.topgameoptiontext button:hover{
+    background-color: #005eff;
 }
