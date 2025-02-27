@@ -160,17 +160,171 @@
 
 
 
-const Employee = {
-    id: "EMP01",
-    name: "Employee",
-    salary: 500000,
-}
+// const Employee = {
+//     id: "EMP01",
+//     name: "Employee",
+//     salary: 500000,
+// }
 
-console.log(Employee);
-// console.log(Employee.id, Employee.name, Employee.salary);
+// console.log(Employee);
+// // console.log(Employee.id, Employee.name, Employee.salary);
 
-Employee.name = "jahangir";
-Employee["name"] = "NILOY";
-console.log(Employee.id);
+// Employee.name = "jahangir";
+// Employee["name"] = "NILOY";
+// console.log(Employee.id);
 
-console.log(Employee["id"]);
+// console.log(Employee["id"]);
+
+
+// Comments in js
+
+// let a = 10; 
+// let b = 20;
+// let c = a+b;
+// let d ;
+// // d = a+b;
+// console.log(c);
+// console.log(d);
+
+// Operatos in js
+
+// 1. Arithmatic operator
+// +, -, *, /, %, Exponential (**), increment(--), decrement(**)
+// let a = 10;
+// let b =5;
+
+// console.log("Addition", a +b);
+// console.log("Substraction", a-b);
+// console.log("Multiplication", a*b);
+// console.log("Division", a/b);
+// console.log("Expo", a**b);
+// console.log("Modulas", a%b);
+
+// console.log("Increment", ++a);
+
+// console.log("Decrement", --a);
+// console.log(a);
+
+
+// 2. Assignment operators
+// = +=, -=, *=, %=, **=
+
+// let x = 10;
+// console.log(x);
+
+// x += 5;
+// // x = x+ 5;
+// console.log(x);
+
+// x -= 3;
+// // x = x-3
+// // x = 15-3 = 12
+// console.log(x)
+
+// x *= 2;
+// // x = x*2;
+// // x = 12*2;
+// console.log(x);
+
+// x /=4;
+// // x = x/4;
+// // x = 24/4;
+// console.log(x);
+
+// x %= 2;
+// // x = 6%2;
+// console.log(x);
+
+// Comparison operator
+// ==(Equal to), ===(Equal & type), !=(Not equal to), !==(Not equal & type), >, >=, <, <=
+
+// let a = 5; // Number
+// let b = 10; // String
+
+// console.log(a == b); // True
+// console.log( a===b); // False
+
+// console.log( a!= b); //False
+// console.log( a!==b); // True
+
+// console.log(a>b); //False
+// console.log(a>=b); //True
+// console.log(a<b); //False
+// console.log(a<=b); //True
+
+
+// 4. Logical operator
+// Logiacl AND (&&), Logical OR (||), Logical not (!)
+
+// let p =true; let q = false;
+// console.log("Logical AND",p&&q);
+
+// console.log("Logical OR",p||q);
+
+// console.log("Logical NOT", !p );
+// console.log("Logical NOT", !q);
+
+
+// 5. Termary operator
+// condition ? true output : false output
+// let age = 30;
+// // if(age>=18){ //10>=18
+// //     console.log("Adult")
+// // }else{
+// //     console.log("Minor")
+// // }
+//                         //true: //false
+// let status = (age>=18)? "Adult":"Minor";
+// console.log(status)
+
+
+// Conditional statement
+// To implement some condition in the code.
+// If statement
+// let color;
+// mode = "dark-mode"
+// if(mode === "dark-mode"){
+//     color = "black"
+// }
+// console.log(color)
+
+
+// If-Else statement
+// let color;
+// mode = "light-mode"
+// if(mode === "dark-mode"){
+//     color = "black"
+// }else{
+//     color = "white"
+// }
+// console.log(color)
+
+
+// Else-if statement
+
+// let age = 23;
+// if (age < 18) {
+//     console.log("Junior");
+// } else if (age > 60) {
+//     console.log("Senior");
+// } else {
+//     console.log("Middle");
+// }
+
+
+let a = parseFloat(prompt("Enter a number"));
+console.log(a);
+
+//Question 
+
+// Get user to input a number using prompt("Enter a number"). Check if the number is multiple of 7 or not.
+//Write a code which can give grades to students according to their scores.
+// 80-100 - A
+// 70-79 - B
+// 60-69 -C
+// 50-59 -D
+// 0-49 - F
+
+
+
+
