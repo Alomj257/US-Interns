@@ -320,6 +320,7 @@ header{
     border-radius: 2rem;
     margin-left: 3rem;
     justify-content: space-between;
+    
 }
 .trendinggamesection::-webkit-scrollbar{
     width: 0;
