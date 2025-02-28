@@ -5,7 +5,7 @@ body{
    /* background-color: blue; */
 }
 header{
-   background-color: #A3D100
+   background-color: #2a2b27
 }
 li, a, button{
    font-family: Arial, Helvetica, sans-serif;
@@ -57,10 +57,10 @@ color:black;
    transition: all 0.3s ease 0s;
 }
 .button:hover{
-   background-color: rgb(146, 19, 45);
+   background-color: #ee626b
 }
 
-.first1 {background:url("wallll.jpeg");
+.first1 {background:url("download\ \(1\).jpeg");
 background-repeat: no-repeat;
 background-size: cover;
 border-bottom-left-radius: 6rem;
@@ -293,6 +293,9 @@ opacity:80%;
    margin-top: 10px;
    margin-left: 15px;
 }
+
+
+
 .gameoption i{
    position: relative;
    left: 35%;
@@ -329,7 +332,7 @@ opacity:80%;
 
 }
 
-  /* nextpart  */
+  /* nextpart section  */
 
   
 /* .topgame__sect{ */
@@ -491,7 +494,7 @@ opacity:80%;
    display: flex;
    justify-content: center;
    align-items: center;
-   top: 50%;
+   top: 40%;
    transform: translateY(50%);
    cursor: pointer;
    transition: all 0.3s;
@@ -503,11 +506,11 @@ opacity:80%;
 }
 
 .category__wraper i:first-child{
-   left: -22px;
+   left: -60px;
 }
 
 .category__wraper i:last-child{
-   right: -22px;
+   right: -62px;
 }
 
 .category__carousel{
@@ -548,7 +551,7 @@ opacity:80%;
 
 .category__card img {
    width: 100%;
-   height: 100%;
+   height: 85%;
    border-bottom-left-radius: 2rem;
    border-bottom-right-radius: 2rem;
    object-fit: cover;
@@ -559,9 +562,131 @@ opacity:80%;
    padding: 1.5rem;
    text-align: center;
    color: #fff;
+   /* height: 10%; */
+   /* width: 72.6%; */
+
 }
 .imagecard{
    height: 75%;
    width: 100%;
 }
 
+/* next section5 */
+
+
+.CTA__sect{
+   margin-top: 16rem;
+   position: relative;
+
+}
+
+.CTA__sect::after{
+   content: '';
+   background: url(team\ pubg.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   max-width: 550px;
+   max-height: 510px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: -110px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   z-index: 1;
+   border-radius: 2rem;
+}
+
+.CTA{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.CTA__ourshop{
+   width: 25%;
+   background-color: #f7f7f7;
+   padding: 5rem;
+   border-radius: 2rem;
+   z-index: 9;
+}
+
+.section__largtitle span {
+   color: #0071f8;
+}
+
+.ourshop__text{
+   font-weight: bold;
+   line-height: 1.5;
+   margin-bottom: 2rem;
+}
+
+.ourshop__link{
+   text-decoration: none;
+   color: #fff;
+   background-color: #ee626b;
+   padding: 1rem 1.5rem;
+   border-radius: 2rem;
+   font-size: 14px;
+   font-weight: bold;
+   transition: 0.6s;
+}
+
+.ourshop__link:hover{
+   background-color: #0071f8;
+}
+
+.CTA__newletter{
+   width: 25%;
+   background-color: #f7f7f7;
+   padding: 5rem;
+   border-radius: 2rem;
+   align-self: flex-end;
+   z-index: 9;
+}
+
+.newsletter__inp-container{
+   width: 100%;
+   background: #fff;
+   height: 50px;
+   border-radius: 2rem;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.newsletter__inp-container input {
+   width: 55%;
+   height: 100%;
+   border: none;
+   outline: none;
+   padding-left: 1.8rem;
+}
+
+.newsletter__inp-container button {
+   width: 45%;
+   height: 100%;
+   border: none;
+   background-color: #ee626b;
+   color: #fff;
+   border-radius: 2rem;
+   font-size: 16px;
+   padding: 0 1rem;
+   transition: 0.6s;
+   cursor: pointer;
+}
+
+.newsletter__inp-container button:hover{
+   background-color: #0071f8;
+}
+
+.CTA__newletter .section__largtitle {
+   margin-bottom: 1rem;
+}
+/* footer section  */
+
+.cointainer4{
+   background-color: #100d0d;
+}
