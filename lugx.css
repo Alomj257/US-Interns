@@ -228,7 +228,7 @@ header{
 .icons{
   position: relative;
   translate: 40% 50%;
-  justify-content: center;
+  /* justify-content: center; */
   
 }
 
@@ -237,9 +237,11 @@ header{
     justify-content: center;
 }
 .icons i{
-    color: #005eff;
-    font-size: 3.5rem;
-    align-items: center;
+    background-color: #005eff;
+    padding: 1rem;
+    border-radius: 7rem;
+    font-size: 2rem;
+   justify-content: center;
 }
 .innerbox h3{
     text-align: center;
@@ -334,7 +336,7 @@ header{
     position: relative;
     height: 100%;
     width: 100%;
-    object-fit: ;
+    object-fit: cover;
     border-radius: 2rem;
 }
 .gameoption h2,h6{
@@ -530,6 +532,7 @@ header{
 .itemimg img{
     width: 100%;
     position: relative;
+    object-fit: cover;
     border-bottom-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
 }
@@ -599,7 +602,8 @@ header{
 
 .backgroundimage{
     content: '';
-    background: url("Kratos\ fury.jpg");
+    object-fit: cover;
+    background: url("85044256-cheapest-black-myth-wukong-key-3744.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* max-width:18rem;
@@ -623,7 +627,7 @@ header{
     min-width: 20rem;
     width: 100%;
     height: 20rem;
-    background-color: #d4c9c9;
+    background-color: #ececec;
     padding: 5rem;
     border-radius: 2rem;
     position: relative;
@@ -632,7 +636,7 @@ header{
 }
 .ourshop button{
     padding: 1rem;
-    background-color: #ee626b;
+    background-color: chocolate;
     border-radius: 2rem;
     margin-top: 1rem;
     border-style: none;
@@ -641,7 +645,7 @@ header{
     min-width: 20rem;
     width: 100%;
     height: 20rem;
-    background-color: #d4c9c9;
+    background-color: #ececec;
     padding: 5rem;
     border-radius: 2rem;
     position: relative;
@@ -666,7 +670,7 @@ header{
     width: 55%;
     padding: 0 0 0 2rem;
     font-size: 15px;
-    background-color: antiquewhite;
+    background-color: rgb(248, 236, 221);
 }
 .subscribenow button{
     border: none;
