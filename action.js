@@ -76,3 +76,15 @@ myBike.type = 'Bike';
 myBike.brand = 'Yamaha';
 console.log(myBike);
 myBike.start();
+
+
+// 4th 
+ Create a nested object and log a deeply nested value. Create an object 'company' that includes properties like 'name',
+  'location', and 'departments'.    Inside 'departments', include nested objects for 'engineering' and 'marketing',
+   each having properties for    'teamLead' and 'employees'. Write a script to log only the name of the engineering team lead in the console
+
+
+   const company = {
+    name 
+
+   }

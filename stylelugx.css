@@ -243,13 +243,21 @@ opacity:80%;
 }
 
 /* Nextpart trending game */
+
+
 .section2{
    margin-left: 4.3rem;
    margin-top: 10rem;
-   padding-right: 5rem;
+   /* padding-right: 5rem; */
+   /* position: relative; */
 }
 .Trending{
    margin-left: 3rem;
+}
+
+.trendingh6{
+   margin-left: 3rem;
+   color: #ee626b;
 }
 
 .trendinggamesection{
@@ -287,18 +295,24 @@ opacity:80%;
 .gameoption h2,h6{
    margin: 0;
    padding: 0;
-   padding-right: 3.5rem;
+   /* padding-right: 3.5rem; */
 }
 .gameoptiontext{
    margin-top: 10px;
    margin-left: 15px;
+   position: relative;
+}
+
+.gameoptionontext h6{
+   opacity: 50%;
 }
 
 
 
 .gameoption i{
-   position: relative;
-   left: 35%;
+   position: absolute ;
+   left: 80%;
+   bottom:3%;
    font-size: large;
    padding: 0.7rem;
    border-radius: 2rem;
@@ -318,8 +332,10 @@ opacity:80%;
 }
 .gameoption:hover{
    i{
-       position: relative;
-       left: 35%;
+       position: absolute
+       left: 80%
+       bottom:3%;
+
        font-size: large;
        padding: 0.7rem;
        border-radius: 2rem;
@@ -575,7 +591,7 @@ opacity:80%;
 
 
 .CTA__sect{
-   margin-top: 16rem;
+   margin-top: 7em;
    position: relative;
 
 }
@@ -606,7 +622,7 @@ opacity:80%;
 
 .CTA__ourshop{
    width: 25%;
-   background-color: #f7f7f7;
+   background-color:  #f7f7f7;
    padding: 5rem;
    border-radius: 2rem;
    z-index: 9;
@@ -686,7 +702,84 @@ opacity:80%;
    margin-bottom: 1rem;
 }
 /* footer section  */
-
-.cointainer4{
-   background-color: #100d0d;
+/*  
+.cointainer0{
+   background-color: #2a2b27;
+   min-height: 27rem;
 }
+.copy__right{
+   background-color: #0071f8;
+   height:20rem ;
+    border-radius: 1rem; 
+color: #ee626b;
+   text-align: center;
+   top: 2;
+
+}
+    */
+
+    .footer {
+      background-color: #2a2b27;
+      color: #ffffff;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: 7em;
+  }
+  
+  .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+  }
+  
+  .footer-section {
+      flex: 1;
+      margin: 1rem;
+      min-width: 250px;
+  }
+  
+  .footer-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+  
+  .footer-section ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .footer-section ul li {
+      margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+      color: #0071f8;
+  }
+  
+  .footer-bottom {
+      background-color: #0071f8;
+      color: #fff;
+      padding: 1rem 0;
+      margin-top: 2rem;
+  }
+  
+  .footer-bottom p {
+      margin: 0;
+      font-size: 1rem;
+  }
