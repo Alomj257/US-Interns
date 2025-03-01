@@ -65,8 +65,8 @@ header{
 
 
 .fristsection{
-    background:url("1371343.jpeg");
-    opacity: 90%;
+    background:url("1519399.jpg");
+    opacity: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 6rem;
@@ -334,6 +334,7 @@ header{
     position: relative;
     height: 100%;
     width: 100%;
+    object-fit: ;
     border-radius: 2rem;
 }
 .gameoption h2,h6{
@@ -417,15 +418,15 @@ header{
     display: flex;
 }
 .topgameoption{
-    height: 19rem;
-    min-width:12%;
-    background-color: rgb(205, 202, 202);
+    height: 18rem;
+    min-width:17%;
+    background-color: rgb(255, 255, 255);
     border-radius: 2rem;
     margin-left: 3.6rem;
     justify-content: space-between;
 }
 .topgameoptionimage{
-    height: 60%;
+    height: 50%;
     width: 100%;
 }
 .topgameoptionimage img{
@@ -448,9 +449,9 @@ header{
     gap: 0.5rem;
 }
 .topgameoptiontext button{
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 0.5rem;
-    margin-left: 25%;
+    margin-left: 30%;
     border-radius: 2rem;
     border-style: none;
     background-color: #ec323e;
@@ -712,7 +713,7 @@ header{
 footer{
     height: 5rem;
     width: 100%;
-    background-color: #005eff;
+    background-color: #181819;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
@@ -724,7 +725,7 @@ footer{
     padding-right: 10rem;
 }
 footer p{
-    background-color: #005eff;
+    background-color: #0f1010;
     margin: 0;
     text-align: center;
     color: #ffffff;
