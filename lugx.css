@@ -484,86 +484,63 @@ header{
 
 /* section4 */
 
-
 .section4{
-     margin: 7rem;
-     overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #ffffff;
 }
-.slider{
-    width: 100%;
-    border: #ec323e solid;
-    height:var(--height);
-    overflow: hidden;
-}
-.slidertrack{
-    display: flex;
-    width: 100%;
-    min-width: calc(var(--width) * var(--quantity));
+.wraper{
+    border:1px solid black;
+    width:90%;
+    margin-inline: auto;
     position: relative;
+    height: 25rem;
     overflow: hidden;
 }
-.slide{
-    background-color: #cec6c6;
-    height:var(--height);
-    width: var(--width);
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5rem;
-    left: 100%;
-    animation: autoRun 10s linear infinite;
-    animation-delay: calc((10s / var(--quantity)) * (var(--position) -1));
-
-}
-.slide img{
-    width: 32rem;
-    height: 20rem;
-}
-@keyframes autoRun{
-    from{
-        left:100%;
-    }to{
-        left: calc(var(--width) * -1);
+@keyframes scrolleft{
+    to{
+        left:-25rem;
     }
 }
-
-/* section5 */
-
-.section5{
-    height:140vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: #005eff;
-    /* place-items: center; */
-}
-
-.fristboxsection5{
-    background-color: #ffffff;
-    height: 60vh;
-    width: 25%;
+.item{
+    height: 25rem;
+    width: 25rem;
     border-radius: 5rem;
-    align-items: center;
-    justify-content: start;
-    place-content: center;
-    padding: 5rem;
-    position: relative;
-    top: 15vh;
-    left: 25vh;
+    background-color: #ec323e;
+    position: absolute;
+    left: max(calc(25rem * 10), 100%);
+    animation-name: scrolleft;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-
-.secondboxsection5{
-    height: 60vh;
-    width: 25%;
-    border-radius: 5rem;
-    position: relative;
-    top: 15vh;
-    left: 25vh;
-    background-color: aqua;
+.item1{
+    animation-delay: calc(40s/10 * (10 - 1) * -1 );
 }
-
-.secondboxsection5 img{
-    width: 100vh;
-    height: 65vh;
-    border-radius: 5rem;
+.item2{
+    animation-delay: calc(40s/10 * (10 - 2) * -1 );
+}
+.item3{
+    animation-delay: calc(40s/10 * (10 - 3) * -1 );
+}
+.item4{
+    animation-delay: calc(40s/10 * (10 - 4) * -1 );
+}
+.item5{
+    animation-delay: calc(40s/10 * (10 - 5) * -1 );
+}
+.item6{
+    animation-delay: calc(40s/10 * (10 - 6) * -1 );
+}
+.item7{
+    animation-delay: calc(40s/10 * (10 - 7) * -1 );
+}
+.item8{
+    animation-delay: calc(40s/10 * (10 - 8) * -1 );
+}
+.item9{
+    animation-delay: calc(40s/10 * (10 - 9) * -1 );
+}
+.item10{
+    animation-delay: calc(40s/10 * (10 - 10) * -1 );
 }
