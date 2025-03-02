@@ -511,6 +511,8 @@ header{
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
     position: relative;
+    font-family: sans-serif;
+    align-items: center;
     /* top: 5%; */
 }
 .itemimg{
@@ -520,7 +522,7 @@ header{
     border-bottom-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
     overflow: hidden;
-}
+   }
 .wraper{
     /* border:1px solid black; */
     width:90%;
