@@ -124,7 +124,7 @@ header{
 
 /* Navbarresponsive */
 
-@media(max-width:992px){
+@media (min-width:600px) and (max-width:992px){
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -133,11 +133,17 @@ header{
         display: block;
     }
     .logo{
-        margin-left: 1rem;
+        margin-left: 0.2rem;
     }
     .action_btn{
         left: 0;
         width: 100%;
+    }
+    .dropdownmenu{
+        width:15rem;
+        position: absolute;
+        right: 20rem;
+        top: 60px;
     }
 }
 
@@ -145,6 +151,20 @@ header{
     .dropdownmenu{
         left: 2rem;
         width:unset;
+    }
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .logo{
+        margin-left: 0.2rem;
+    }
+    .action_btn{
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -170,7 +190,6 @@ header{
 }
 .main_banner{
     display: flex;
-   
     justify-content: start;
     align-items: center;
 }
@@ -279,6 +298,87 @@ header{
     width: 100%;
     border-radius: 1.5rem;
 }
+@media(max-width:572px){ 
+    .fristsection{
+        padding: 5rem 0;
+    }
+     .fristsection .container{
+        flex-direction: column; 
+}
+    .main_banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_banner_content{
+        width: 100%;
+        padding-left: 1rem;
+        gap: 1rem;
+        text-align: left;
+    }
+    .main_banner_img{
+        display: none;
+    }
+    .main_banner_searchbutton{
+        max-width: 80%;
+    }
+}
+@media (min-width:600px) and (max-width:992px){
+    .main_banner_content{
+        width: 50%;
+        padding-left: 2rem;
+    }
+    .main_banner_img{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+     .right_img{
+        width: 100%;
+        position: relative;
+        right:5rem;
+    }
+     .price{
+        background-color: #0071f8;
+        color: #fff;
+        padding: 0.6rem 1rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+     .offer {
+        background-color: #ee626b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+        font-size: 30px;
+        border-radius: 50%;
+        position: absolute;
+        font-family: sans-serif;
+        left: -30px;
+        bottom: 10px;
+    }
+    
+    .right_img img {
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+}
+
+
+/* sectionend */
+
+
+
+
 .boxcollection{
     display: flex;
     flex-direction: row;
@@ -359,18 +459,61 @@ header{
     }
     .innerbox h3{
         text-align: center;
-        padding-top: 2.5rem;
+        padding-top: 1rem;
         font-size: 2rem;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:  sans-serif;
         /* position: relative; */
         /* translate: 15% 25%; */
     }
     .icons{
         position: relative;
-       translate: 40% 60%;
+        translate: 40% 40%;
         justify-content: center;
         
       }
+}
+@media  (max-width:572px){
+    .boxcollection{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15rem;
+    }
+    .boxcollectionboxes{
+ 
+        width: 10rem;
+        height: 80%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3rem;
+        margin-left: 1.5rem;
+        gap: 5rem;
+        box-shadow: 2px 2px 2px 2px;
+    }
+    .icons i{
+        background-color: #005eff;
+        padding: 1rem;
+        border-radius: 7rem;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+}
+@media (min-width:600px) and (max-width:972px){
+    .boxcollectionboxes{
+        width: 12rem;
+        height: 70%;
+    }
+    .icons{
+        position: relative;
+        translate: 38% 50%;
+        /* justify-content: center; */
+        
+      }
+      .icons i{
+        background-color: #005eff;
+        padding: 1rem;
+        border-radius: 7rem;
+        font-size: 1rem;
+       justify-content: center;
+    }
 }
 
 
@@ -398,8 +541,20 @@ header{
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    /* animation: scroll 20s linear infinite; */
     /* padding-left: 4.7rem; */
     /* padding-right: 5rem; */
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
 .gameoption{
     /* display: flex; */
@@ -474,6 +629,102 @@ header{
         color: #005eff;
     }
 
+}
+@media (min-width:600px) and (max-width:972px){
+    .section2{
+        margin-left: 1rem;
+        padding-right:2rem;
+    }
+    .Trending{
+        margin-left: 2rem;
+    }
+    .Trendingh6{
+        margin-left: 2rem;
+        color: #ec323e;
+    }
+    .trendinggamesection{
+        height: 16rem;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: start;
+    }
+    .gameoption{
+        /* display: flex; */
+        height: 14rem;
+        min-width:29%;
+        border-radius: 2rem;
+        margin-left: 2rem;
+        
+    }
+    .gameoptiontext h2{
+        font-size: 0.9rem;
+    }
+    .gameoption i{
+        position: absolute;
+        left: 80%;
+        bottom:-10%;
+        /* bottom: 3%; */
+        font-size: 1rem;
+        padding: 0.7rem;
+        border-radius: 2rem;
+        background-color:  #ec323e;
+        color: #000000;
+    }
+}
+@media (max-width:572px){
+    .section2{
+        margin-left: 1rem;
+        padding-right:1em;
+    }
+    .Trending{
+        margin-left: 1rem;
+    }
+    .Trendingh6{
+        margin-left: 1rem;
+        color: #ec323e;
+    } 
+    .trendinggamesection{
+        height: 14rem;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: start;
+        padding-right: 0;
+        margin-right: 0;
+        /* animation: scroll 20s linear infinite; */
+        /* padding-left: 4.7rem; */
+        /* padding-right: 5rem; */
+    }
+    .gameoption{
+        /* display: flex; */
+        height: 13rem;
+        min-width:80%;
+        background-color: rgb(225, 225, 225);
+        border-radius: 2rem;
+        margin-left:1rem;
+        justify-content: space-between;
+    }
+    .gameoptiontext h2{
+        font-size: 0.9rem;
+    }
+    .gameoption i{
+        position: absolute;
+        left: 80%;
+        bottom:-10%;
+        /* bottom: 3%; */
+        font-size: 1rem;
+        padding: 0.7rem;
+        border-radius: 2rem;
+        background-color:  #ec323e;
+        color: #000000;
+    }
 }
 
 
@@ -574,6 +825,120 @@ header{
 .topgameoptiontext button:hover{
     background-color: #005eff;
 }
+@media (min-width:600px) and (max-width:972px){
+    .section3{
+        background-color: rgb(225, 228, 230);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 2rem;
+        padding-left:0;
+        padding-right:1rem;
+    }
+    .container3{
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+    .topgameoption{
+        height: 15rem;
+        min-width:18%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2rem;
+        margin-left: 3.6rem;
+        justify-content: space-between;
+    }
+    .topgameoptiontext h2{
+        font-size: 1.2rem;
+    }
+    .topgameoptiontext  button{
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin-left: 3rem;
+        color: #ffffff;
+    }
+    .viewless{
+        position: absolute;
+        left: 85%;
+        bottom: unset;
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin-bottom: -1rem;
+        color: #ffffff;
+        background-color: #ec323e;
+        border-radius: 2rem;
+        border-style:none;
+    }
+}
+ @media (max-width:572px){
+    .container3{
+        margin-bottom:0;
+    }
+    
+    
+    .section3{
+        background-color: rgb(225, 228, 230);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 2rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .topgames{
+        height: 14rem;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    .topgameoption{
+        height: 13rem;
+        min-width:35%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2rem;
+        margin-left: 3rem;
+        justify-content: space-between;
+    }
+    .topgameoptiontext button{
+        margin-top: 1rem;
+        padding: 0.5rem;
+        margin-left: 30%;
+        border-radius: 2rem;
+        border-style: none;
+        background-color: #ec323e;
+        color: #ffffff;
+    }
+    .topgameoptiontext{
+        padding-top: 1rem;
+    
+    }
+    .topgameoptiontext h2{
+        font-size: 1rem;
+    }
+    .viewall{
+        position: absolute;
+        left: 75%;
+        padding: 0.5rem;
+        color: #ffffff;
+        background-color: #ec323e;
+        border-radius: 2rem;
+        border-style:none;
+    
+    }
+    .viewless{
+        position: absolute;
+        left: 75%;
+        bottom: unset;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        background-color: #ec323e;
+        border-radius: 2rem;
+        border-style:none;
+    }
+    }
+
 
 /* section4 */
 
@@ -799,6 +1164,211 @@ header{
     font-size: 2.5rem;
 
     font-family: sans-serif;
+}
+@media (min-width:600px) and (max-width:972px){
+    .section5{
+        margin-right: 0;
+    }
+    .backgroundimage{
+        content: '';
+        object-fit: cover;
+        background: url("85044256-cheapest-black-myth-wukong-key-3744.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* max-width:18rem;
+        max-height: 17rem; */
+        width: 25rem;
+        height: 25rem;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+        border-radius: 2rem;
+    }
+    .ourshop{
+        min-width: 10rem;
+        width: 100%;
+        height: 10rem;
+        background-color: #ececec;
+        padding: 5rem;
+        border-radius: 2rem;
+        position: relative;
+        top:9rem;
+        left: -15rem;
+    }
+    .ourshop button{
+        padding: 0.6rem;
+        background-color: chocolate;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        font-size: 0.5rem;
+        border-style: none;
+        color: #ffffff;
+    }
+    .ourshop1{
+        color: #ec323e;
+        font-size: 0.6rem;
+        font-family: sans-serif;
+    }
+    .gopro{
+        font-size:medium;
+        font-family: sans-serif;
+    }
+    .textarea{
+        font-size:xx-small;
+        padding: 0;
+        margin: 0;
+    }
+    .newsletter{
+        min-width: 12rem;
+        width: 100%;
+        height: 12rem;
+        background-color: #ececec;
+        padding: 4rem;
+        border-radius: 2rem;
+        position: relative;
+        top:13rem;
+        right: 2rem;
+    }
+    .newsletter1{
+        color: #ec323e;
+        font-size: 0.6rem;
+        font-family: sans-serif;
+    }
+    .subscriber{
+        font-size:large;
+    
+        font-family: sans-serif;
+    }
+    .subscribenow input{
+        border: none;
+        outline: none;
+        width: 65%;
+        padding: 0 0 0 2rem;
+        font-size: 10px;
+        background-color: rgb(248, 236, 221);
+    }
+    .subscribenow button{
+        border: none;
+        outline: none;
+        background-color: chocolate;
+        width: 35%;
+        height: 100%;
+        border-radius: 1rem;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-size: 10px;
+        transition: all 0.6s;
+        cursor: pointer;
+    }
+
+}
+@media (max-width:572px){
+    .section5{
+        margin: 0;
+    }
+    .backgroundimage{
+        content: '';
+        object-fit: cover;
+        background: url("85044256-cheapest-black-myth-wukong-key-3744.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* max-width:18rem;
+        max-height: 17rem; */
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+        border-radius: 2rem;
+    }
+    .ourshop{
+        min-width: 8rem;
+        width: 100%;
+        height: 8rem;
+        background-color: #ececec;
+        padding: 5rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        border-radius: 2rem;
+        position: relative;
+        top:9rem;
+        left: -5rem;
+    }
+    .ourshop button{
+        padding: 0.6rem;
+        background-color: chocolate;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        font-size: 0.5rem;
+        border-style: none;
+        color: #ffffff;
+    }
+    .ourshop1{
+        color: #ec323e;
+        font-size: 0.6rem;
+        font-family: sans-serif;
+    }
+    .gopro{
+        font-size:small;
+        font-family: sans-serif;
+    }
+    .textarea{
+        font-size:6px;
+        padding: 0;
+        margin: 0;
+    }
+    .newsletter{
+        min-width: 10rem;
+        width: 100%;
+        height: 10rem;
+        background-color: #ececec;
+        padding: 1rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 25rem;
+        right: -2rem;
+    }
+    .newsletter1{
+        color: #ec323e;
+        font-size: 0.6rem;
+        font-family: sans-serif;
+    }
+    .subscriber{
+        font-size:large;
+    
+        font-family: sans-serif;
+    }
+    .subscribenow input{
+        border: none;
+        outline: none;
+        width: 65%;
+        padding: 0 0 0 2rem;
+        font-size: 10px;
+        background-color: rgb(248, 236, 221);
+    }
+    .subscribenow button{
+        border: none;
+        outline: none;
+        background-color: chocolate;
+        width: 35%;
+        height: 100%;
+        border-radius: 1rem;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-weight: normal;
+        letter-spacing: 1px;
+        font-size: 10px;
+        transition: all 0.6s;
+        cursor: pointer;
+    }
 }
 
 /* footer */
