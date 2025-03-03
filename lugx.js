@@ -1,3 +1,18 @@
+const togglebtn = document.querySelector('.toggle_btn')
+const togglebtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdownmenu')
+
+togglebtn.onclick = function() {
+  dropDownMenu.classList.toggle('open')
+  const isOpen = dropDownMenu.classList.contains('open')
+  togglebtnIcon.className = isOpen
+    ? "fa-solid fa-xmark"
+    : "fa-solid fa-bars"
+}
+
+
+
+
 function setupTopGamesSection(){
     const section3 = document.querySelector('.section3');
     const viewAllButton = section3.querySelector('.viewall');

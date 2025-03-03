@@ -1,64 +1,151 @@
 body{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    /* background-color: blue; */
-}
-header{
-    /* position: fixed; */
-    background-color:rgb(21, 17, 7);
-}
-li, a, button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem 6%;
+    margin: 0;
 }
 .logo{
-    cursor: pointer;
-    margin-right: auto;
+    margin-left: 3.5rem;
+}
+.logo img{
     height: 2rem;
     width: 2rem;
+    padding-right: 0.8rem;
+    margin-top: 0.5rem;
 }
-.nav_links{
+li{
     list-style: none;
 }
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+.links a:hover{
+    color: #000000;
+    background-color: #fff;
+    padding: 0.3rem;
+    scale: 1.1;
+    border-radius: 1rem;
+}
+links a:active{
+    color: #000000;
+    background-color: #fff;
+    padding: 0.3rem;
+    scale: 0.9;
+    border-radius: 1rem;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color:rgb(34, 33, 32);
+    backdrop-filter: blur(15px);
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+}
+.navbar .links{
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+.toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: #0071f8;
+    color: #ececec;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    position: relative;
+    left: 50%;
+}
+.action_btn:hover{
+    scale: 1.15;
+    color: #ececec;
+    background-color: chocolate;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+
+
+/* dropdwonmenu */
+.dropdownmenu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgb(38, 35, 35,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdownmenu.open{
+    display: block;
     
 }
-.nav_links li a{
-    transition: all 0.3s ease 0s;
+.dropdownmenu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-.nav_links li a:hover{
- color:rgb(0, 0, 0);
- background-color:white ;
- padding: 0.5rem;
- border-radius: 5rem;
+.dropdownmenu .action_btn{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.button{
-    margin-left: 1rem;
-    border-radius: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color:chocolate;
-    color: rgb(255, 255, 255);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+
+
+/* Navbarresponsive */
+
+@media(max-width:992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+    .action_btn{
+        left: 0;
+        width: 100%;
+    }
 }
-.button:hover{
-    background-color: blue
+
+@media(max-width:576px){
+    .dropdownmenu{
+        left: 2rem;
+        width:unset;
+    }
 }
 
 /* setion1 */
