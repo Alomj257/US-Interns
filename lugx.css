@@ -825,10 +825,11 @@ header{
 .topgameoptiontext button{
     margin-top: 2rem;
     padding: 0.5rem;
-    margin-left: 30%;
+    margin-left: 38%;
     border-radius: 2rem;
     border-style: none;
     background-color: #ec323e;
+    color: #ffffff;
 }
 .viewall{
     position: absolute;
