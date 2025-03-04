@@ -1,3 +1,17 @@
+@media (min-width:600px) and (max-width:972px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width:572px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
 body{
     padding: 0;
     margin: 0;
@@ -26,12 +40,15 @@ a{
     scale: 1.1;
     border-radius: 1rem;
 }
-links a:active{
+.links a:active{
     color: #000000;
     background-color: #fff;
     padding: 0.3rem;
     scale: 0.9;
     border-radius: 1rem;
+}
+header{
+    /* position: fixed; */
 }
 header{
     position: relative;
@@ -1389,24 +1406,225 @@ header{
 }
 
 /* footer */
-
 footer{
-    height: 5rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 0;
     width: 100%;
-    background-color: #181819;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    height: auto;
 }
+.logoimg2 img{
+    width:4rem;
+    height: 4rem;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #005eff; */
+    height: 50%;
+    padding: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
 .footer1{
     display: flex;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    align-items: center;
+    gap: 2rem;
 }
-footer p{
-    background-color: #0f1010;
-    margin: 0;
-    text-align: center;
+.footer1 li a{
+    font-size: 1.3rem;
+}
+.footer1 li a:hover{
+    background-color: #fff;
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    transition: 0.5s ease-out;
+}
+.emailsection{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    /* width: 30rem; */
+}
+.buttonemail{
+    width: 30rem;
+    /* margin-bottom: 2rem; */
+    /* background-color: #005eff; */
+}
+.buttonemail input{
+    min-width:70%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    background-color: rgb(223, 198, 180);
+
+}
+.buttonemail button{
+    min-width:25%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius:3rem ;
+    background-color: chocolate;
     color: #ffffff;
+    /* margin-left: 2rem; */
+}
+.iconslast i{
+    font-size: 2rem;
+    margin-right: 1rem ;
+    margin-top: 1rem;
+}
+@media (min-width:600px) and (max-width:972px){
+    footer{
+        background-color: #000000;
+        color: #ffffff;
+        padding: 2rem 0;
+        width: 100%;
+        height: auto;
+    }
+    .logoimg2 img{
+        width:4rem;
+        height: 4rem;
+        align-items: center;
+    }
+    .footer{
+        display: flow-root;
+        /* background-color: #005eff; */
+        height: 50%;
+        padding: 2rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    
+    .footer1{
+        display: flow-root;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .footer1 li a{
+        font-size: 1.3rem;
+    }
+    .footer1 li a:hover{
+        background-color: #fff;
+        color: #000000;
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+        transition: 0.5s ease-out;
+    }
+    .emailsection{
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        /* width: 30rem; */
+    }
+    .buttonemail{
+        margin-top: 2rem;
+        width: 30rem;
+        /* margin-bottom: 2rem; */
+        /* background-color: #005eff; */
+    }
+    .buttonemail input{
+        min-width:70%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 3rem;
+        background-color: rgb(223, 198, 180);
+    
+    }
+    .buttonemail button{
+        min-width:25%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius:3rem ;
+        background-color: chocolate;
+        color: #ffffff;
+        /* margin-left: 2rem; */
+    }
+    .iconslast i{
+        font-size: 2rem;
+        margin-right:1 rem ;
+        margin-top: 2rem;
+    }
+}
+@media (max-width:572px){
+    footer{
+        background-color: #000000;
+        color: #ffffff;
+        padding: 1rem 0;
+        width: 100%;
+        height: auto;
+    }
+    .logoimg2 img{
+        width:4rem;
+        height: 4rem;
+        align-items: center;
+    }
+    .footer{
+        display: flow-root;
+        /* background-color: #005eff; */
+        height: 50%;
+        padding: 1rem;
+        padding-left: 2rem;
+        /* padding-right: 7rem; */
+    }
+    
+    .footer1{
+        display: flow-root;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .footer1 li a{
+        font-size: 1.3rem;
+    }
+    .footer1 li a:hover{
+        background-color: #fff;
+        color: #000000;
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+        transition: 0.5s ease-out;
+    }
+    .emailsection{
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        /* width: 30rem; */
+    }
+    .buttonemail{
+        margin-top: 2rem;
+        width: 10rem;
+        /* margin-bottom: 2rem; */
+        /* background-color: #005eff; */
+    }
+    .buttonemail input{
+        min-width:70%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 3rem;
+        background-color: rgb(223, 198, 180);
+    
+    }
+    .buttonemail button{
+        min-width:25%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius:3rem ;
+        background-color: chocolate;
+        color: #ffffff;
+        /* margin-left: 2rem; */
+    }
+    .iconslast i{
+        font-size: 2rem;
+        margin-right:1 rem ;
+        margin-top: 2rem;
+    }
 }
