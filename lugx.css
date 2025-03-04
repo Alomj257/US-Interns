@@ -498,6 +498,7 @@ header{
 @media  (max-width:572px){
     .boxcollection{
         margin-right: 0;
+        
         /* display: none; */
     }
     .boxcollection{
@@ -728,7 +729,9 @@ header{
         scroll-snap-type: x mandatory;
         scroll-snap-align: start;
         padding-right: 0;
-        margin-right: 0;
+        margin-right:0;
+        /* padding-left: 0;
+        margin-left: 0; */
         /* animation: scroll 20s linear infinite; */
         /* padding-left: 4.7rem; */
         /* padding-right: 5rem; */
