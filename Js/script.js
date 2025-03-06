@@ -312,8 +312,8 @@
 // }
 
 
-let a = parseFloat(prompt("Enter a number"));
-console.log(a);
+// let a = parseFloat(prompt("Enter a number"));
+// console.log(a);
 
 //Question 
 
@@ -328,3 +328,14 @@ console.log(a);
 
 
 
+// Loops in js
+
+for(initilization; condition; increment){
+    // Code block to be execute.
+}
+
+
+// 1 to 100
+for(let i=1; i<=100; i++){
+    console.log(i);
+}
