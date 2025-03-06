@@ -358,20 +358,57 @@
 // }
 
 
-for(let i=0; i<5; i++){
-    console.log(i)
+// for(let i=0; i<5; i++){
+//     console.log(i)
+// }
+
+// let k =0;
+// while(k<5){
+//     console.log(k);
+//     k++;
+// }
+
+// let j =1;
+// let sum =0;
+// while(j<=10){
+//     sum = sum +j;
+//     j++;
+// }
+// console.log(sum);
+
+
+// Do while loop
+
+// do {
+//     // Execute code
+// }while(condition)
+
+// let i =0;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i<0)
+
+// for(let j=0; j<0; j--){
+//     console.log(j);
+// }
+
+
+
+// for in loop.
+// the for .... in loop iterates over the properties of an object.
+
+const person = {
+    name: "Jahangir",
+    age: 23,
+    city: "kolkata",
+    emp_id: "WIP0012"
 }
 
-let k =0;
-while(k<5){
-    console.log(k);
-    k++;
-}
+// for(let key in Object){
 
-let j =1;
-let sum =0;
-while(j<=10){
-    sum = sum +j;
-    j++;
+// }
+
+for(let key in person){
+    console.log(key, person[key]);
 }
-console.log(sum);
