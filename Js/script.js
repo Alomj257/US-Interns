@@ -335,14 +335,43 @@
 // }
 
 
-// 1 to 20
-for(let i=1; i<=20; i++){
-    console.log(i);
+// // 1 to 20
+// for(let i=1; i<=20; i++){
+//     console.log(i);
+// }
+
+// // 1+2+3+......+10;
+// let sum =0;
+// for(let i =1; i<=3; i++){ //1, 0+1 =1, 2, 1+2 =3, 3, 3+3=6 , 4, 6+4 =10, 5, 10+5=15,
+//     sum = sum +i;
+// }
+// console.log(sum);
+
+
+// While loop
+
+// // syntax
+// initilization
+// while(condition){
+//     //code excute.
+//     ++. --
+// }
+
+
+for(let i=0; i<5; i++){
+    console.log(i)
 }
 
-// 1+2+3+......+10;
-let sum = 0;
-for(let i=1; i<=10; i++){
-    sum = sum + i;
+let k =0;
+while(k<5){
+    console.log(k);
+    k++;
+}
+
+let j =1;
+let sum =0;
+while(j<=10){
+    sum = sum +j;
+    j++;
 }
 console.log(sum);
