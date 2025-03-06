@@ -330,12 +330,19 @@
 
 // Loops in js
 
-for(initilization; condition; increment){
-    // Code block to be execute.
-}
+// for(initilization; condition; increment){
+//     // Code block to be execute.
+// }
 
 
-// 1 to 100
-for(let i=1; i<=100; i++){
+// 1 to 20
+for(let i=1; i<=20; i++){
     console.log(i);
 }
+
+// 1+2+3+......+10;
+let sum = 0;
+for(let i=1; i<=10; i++){
+    sum = sum + i;
+}
+console.log(sum);
