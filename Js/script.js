@@ -445,12 +445,12 @@ const students = [{
     age: 19
 }];
 
-// let ageSum =0;
-// for(let key in students ){
-//     console.log(students[key])
-//     ageSum = ageSum +students[key]["age"];
-// }
-// console.log(ageSum)
+let ageSum =0;
+for(let key in students ){
+    console.log(students[key])
+    ageSum = ageSum +students[key]["age"];
+}
+console.log(ageSum)
 
 let sum1 =0;
 for(let student of students){
