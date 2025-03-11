@@ -48,13 +48,24 @@
 
 // 3. Problem 3
 
-let arr = [1,3,65,6,87,90,23, 121, 56, 987, 90, 1];
+// let arr = [1,3,65,6,87,90,23, 121, 56, 987, 90, 1];
 
-max = arr[0];
-// max =90;
-for(let i =1; i<arr.length; i++){
-    if(arr[i]>max){ //23>90 ?
-        max = arr[i];
-    }
+// max = arr[0];
+// // max =90;
+// for(let i =1; i<arr.length; i++){
+//     if(arr[i]>max){ //23>90 ?
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+
+// 4. Problem 
+
+let str = "hello india"; //aidni olleh
+let result = "";
+
+for(let i = str.length-1; i>=0; i--){
+    result= result+str[i]
 }
-console.log(max);
+console.log(result);
