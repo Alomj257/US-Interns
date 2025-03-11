@@ -31,16 +31,30 @@
 
 // 2. Probelm 2
 
-const sumOfEven = (arr) => {
-    let sum = 0;
-    for(let i =0; i< arr.length; i++){
-        if(arr[i]%2 === 0){
-            sum = sum + arr[i]
-        }
-    }
-    return sum;
-}
+// const sumOfEven = (arr) => {
+//     let sum = 0;
+//     for(let i =0; i< arr.length; i++){
+//         if(arr[i]%2 === 0){
+//             sum = sum + arr[i]
+//         }
+//     }
+//     return sum;
+// }
 
-let array = [1,2,3,4,5,6,7,8,9];
-let result = sumOfEven(array);
-console.log(result);
+// let array = [1,2,3,4,5,6,7,8,9];
+// let result = sumOfEven(array);
+// console.log(result);
+
+
+// 3. Problem 3
+
+let arr = [1,3,65,6,87,90,23, 121, 56, 987, 90, 1];
+
+max = arr[0];
+// max =90;
+for(let i =1; i<arr.length; i++){
+    if(arr[i]>max){ //23>90 ?
+        max = arr[i];
+    }
+}
+console.log(max);
