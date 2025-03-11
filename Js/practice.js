@@ -62,10 +62,25 @@
 
 // 4. Problem 
 
-let str = "hello india"; //aidni olleh
-let result = "";
+// let str = "hello india"; //aidni olleh
+// let result = "";
 
-for(let i = str.length-1; i>=0; i--){
-    result= result+str[i]
+// for(let i = str.length-1; i>=0; i--){
+//     result= result+str.charAt(i);
+// }
+// console.log(result);
+
+
+// 5. Problem
+
+for(let i =1; i<100; i++){
+    if(i%3 == 0 && i%5 === 0){
+        console.log("FIZZBUZZ")
+    }else if(i%3 === 0){
+        console.log("FIZZ")
+    }else if(i%5 === 0){
+        console.log("Buzz")
+    }else{
+        console.log(i);
+    }
 }
-console.log(result);
