@@ -413,49 +413,49 @@
 //     console.log(person[key]);
 
 
-// for of loop
+// // for of loop
 
-const numbers = [1,34, 56,6,7,78,9,7];
-for(let number of numbers){
-    console.log(number)
-}
+// const numbers = [1,34, 56,6,7,78,9,7];
+// for(let number of numbers){
+//     console.log(number)
+// }
 
-const array = [20, 25, 35, 45];
-let sum =0;
-for(let arr of array){
-    sum = sum + arr;
-}
-console.log(sum)
-
-
-const fruits = ["apple", "banana", "guava", "pineapple"];
-for(let fruit of fruits){
-    console.log(fruit)
-}
+// const array = [20, 25, 35, 45];
+// let sum =0;
+// for(let arr of array){
+//     sum = sum + arr;
+// }
+// console.log(sum)
 
 
-const students = [{
-    name: "jaha",
-    age: 26
-},{
-    name: "rahu",
-    age: 24
-},{
-    name: "kalu",
-    age: 19
-}];
+// const fruits = ["apple", "banana", "guava", "pineapple"];
+// for(let fruit of fruits){
+//     console.log(fruit)
+// }
 
-let ageSum =0;
-for(let key in students ){
-    console.log(students[key])
-    ageSum = ageSum +students[key]["age"];
-}
-console.log(ageSum)
 
-let sum1 =0;
-for(let student of students){
-    console.log(student.name)
-    console.log(student.age);
-    sum1 = sum1 + student.age;
-}
-console.log(sum1)
+// const students = [{
+//     name: "jaha",
+//     age: 26
+// },{
+//     name: "rahu",
+//     age: 24
+// },{
+//     name: "kalu",
+//     age: 19
+// }];
+
+// let ageSum =0;
+// for(let key in students ){
+//     console.log(students[key])
+//     ageSum = ageSum +students[key]["age"];
+// }
+// console.log(ageSum)
+
+// let sum1 =0;
+// for(let student of students){
+//     console.log(student.name)
+//     console.log(student.age);
+//     sum1 = sum1 + student.age;
+// }
+// console.log(sum1)
