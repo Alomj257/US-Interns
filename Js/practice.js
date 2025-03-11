@@ -16,14 +16,31 @@
 // febo(10);
 
 
-let a =0;
-let b =1;
+// let a =0;
+// let b =1;
 
-console.log(a);
-console.log(b);
-for(let i=2; i<10; i++){
-    let temp = a+b;
-    console.log(temp);
-    a=b;
-    b=temp;
+// console.log(a);
+// console.log(b);
+// for(let i=2; i<10; i++){
+//     let temp = a+b;
+//     console.log(temp);
+//     a=b;
+//     b=temp;
+// }
+
+
+// 2. Probelm 2
+
+const sumOfEven = (arr) => {
+    let sum = 0;
+    for(let i =0; i< arr.length; i++){
+        if(arr[i]%2 === 0){
+            sum = sum + arr[i]
+        }
+    }
+    return sum;
 }
+
+let array = [1,2,3,4,5,6,7,8,9];
+let result = sumOfEven(array);
+console.log(result);
