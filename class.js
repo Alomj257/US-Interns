@@ -129,3 +129,18 @@
 
 // 3. Implement a program that finds the largest number in an array using a for loop.
 
+let num =prompt("Enter number of element you want to add in array");
+    let arr = [];
+    for(let i = 1 ; i<=num ; i++ ) {
+        arr.push(prompt("Enter the element"));
+    }
+    console.log(arr);
+
+    maximum = arr[0];
+
+    for(let i = 0 ; i<arr.length ; i++){
+        if(arr[i]>maximum){
+            maximum = arr[i];
+        }
+    }
+    console.log("The largest number in the array is",maximum);
