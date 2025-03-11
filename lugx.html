@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUGX Gaming</title>
     <link rel="stylesheet" href="stylelugx.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>LUX GAMING SETUP PAGE</title>
 </head>
 <body>
-    <!-- navbar section  -->
-    <header>
-            <img src="favicon.png" alt="Logo" class="logo">
-            <nav class="navbar">
-                <ul class="nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Shop</a></li>
-                    <li><a href="#">Product Details</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <a href="" class="cta"><button class="button">Sign in</button></a>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="favicon.png" alt="Lugx Logo">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#products">Product Details</a></li>
+                <li><a href="#signin" class="btn sign-in">Sign In</a></li> <!-- Added Sign In to the menu -->
+            </ul>
+        </div>
     </header>
-    <!-- body section  -->
-     <section class = "first1">
-        <div class="cointainer">
-            <div class = "mainbg">
-                <div class="mainbg_content">
-                    <div class ="content.text">
-                         <h2>WELCOME TO LUGX</h2>
-                    <h1> beta EVER GAMING </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem? Sunt, eos laborum obcaecati porro soluta voluptatem libero quod ratione molestiae voluptas incidunt maiores iste! Aliquid tenetur veritatis quis nobis.</p>
-                </div>
-                <div class ="searchnow">
-              <!-- <div class = "buttoneffect">  -->
-                 <input type="text" name ="text"placeholder="Typing..." > <button class="jakmak">Search Now</button>   
-                </div>
-                </div>
-            </div>     
-            <div class="banner">
-                <div class="rightside_img">
-                    <img src="MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@.jpg" alt="">
-                    <span class="offer">40%</span>
-                    <span class="price">$22</span>
-                </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text1">
+            <h2>WELCOME TO LUGX</h2>
+            <h1>BEST GAMING SITE EVER!</h1>
+            <p>
+                LUGX Gaming is a free Bootstrap HTML CSS website template for your gaming websites.
+                You can download and use this layout for commercial purposes.
+            </p>
+            <div class="search-box">
+                <input type="text" placeholder="Type Something">
+                <button class="search-btn">Search Now</button>
             </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="MV5BOWM3YjRkM2MtZmU3My00OTc4LTg0MDMtMmEzYjc3NWNjMjIxXkEyXkFqcGc@.jpg" alt="Game Character">
+            <div class="circleee">40%</div>
+            <div class="price-tag">
+                <span class="price">$22</span>
+                <span class="discount">-40%</span>
             </div>
-     </section>
+        </div>
+        
+    </section>
+
+
 
 <!-- nextsection -->
 
@@ -63,19 +74,19 @@
                 <div class="feature__image">
                 <img src="account_circle_18dp_FFFFFF_FILL0_wght300_GRAD0_opsz20.png" alt="">
                 </div>
-                <h3>USER MORE</h3>
+                <h3>USER STORAGE</h3>
             </div>
             <div class="feature__item">
                 <div class="feature__image">
                 <img src="replay_18dp_FFFFFF_FILL0_wght300_GRAD0_opsz20.png" alt="">
                 </div>
-                <h3>REPLY READY</h3>
+                <h3>USER STORAGE</h3>
             </div>
             <div class="feature__item">
                 <div class="feature__image">
                     <img src="view_quilt_18dp_FFFFFF_FILL0_wght300_GRAD0_opsz20.png">  <section class="feature__sect">
                     </div>
-                    <h3>EASY LAYOUT</h3>
+                    <h3>USER STORAGET</h3>
             </div>
         </div>
     </div>
@@ -83,7 +94,7 @@
 
 <!-- NEXTRECTION2 trending game -->
 
-<section class="section2">
+<section class="section22">
     <h6 class="Trending">TRENDING</h6>
     <h2 class="Trending">Trending Games</h2>
     <div class="trendinggamesection">
@@ -418,6 +429,6 @@
 
 
 </body>
-<script src="action.js"> </script>
+<script src="action.js"></script>
 </html>
 

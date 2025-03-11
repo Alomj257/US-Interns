@@ -90,4 +90,42 @@
 
 //    }
 
-console.log("hi")
+// console.log("hi")
+
+
+
+// 1. Write a program to print the first 10 numbers of the Fibonacci sequence using a loop. javascript
+
+// let a = 0, b = 1;
+// console.log(a);
+// console.log(b);
+// for (let i=0;i<=10;i++){
+//     let temp = a + b;
+//     console.log(temp);
+//     a = b;
+//     b = temp;
+// }
+
+
+// 2. Write a function that takes an array as input and returns the sum of all even numbers using a for...of loop.
+    
+//     let num =prompt("Enter number of element you want to add in array");
+//     let arr = [];
+//     for(let i = 1 ; i<=num ; i++ ) {
+//         arr.push(prompt("Enter the element"));
+//     }
+//     console.log(arr);
+
+//     sum =0;
+//     for(let i = 0 ; i<arr.length; i++){
+//         if(i % 2 == 0){
+//         sum += i;
+//     }
+// }
+//     console.log(sum);
+
+
+
+
+// 3. Implement a program that finds the largest number in an array using a for loop.
+
