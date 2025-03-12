@@ -246,5 +246,19 @@
 //     }
 // console.log(duplicationofarray(array));
 
-// 10.Write a program that counts the number of vowels in a given string using a for...of loop
+// 11 .Write a program that counts the number of vowels in a given string using a for...of loop
 
+function countVowels(str) {
+let vowel="aeiouAEIOU";
+let count = 0;
+
+for(char of str){
+    if(vowel.includes(char)){
+        count++;
+    }
+}
+return count;
+}
+
+let str = prompt("Enter a string");
+console.log(countVowels(str));
