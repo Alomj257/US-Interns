@@ -153,14 +153,173 @@
 //     console.log(fact);
 
 // 7. Implement a program that checks if a number is prime using a for loop and conditional operators.
-let num = prompt("Enter a number");
-if(num < 2){
-    console.log("Not a prime number");
-}
-for(let i = 2; i<num; i++){
-    if(num % i == 0){
-        console.log("Not a prime number");
-    }else{
-        console.log("Prime number");
-    }
-}
+// let num = prompt("Enter a number");
+// if(num < 2){
+//     console.log("Not a prime number");
+// }
+// else{
+// for(let i = 2; i<Math.sqrt(num); i++){
+//     if(num % i != 0){
+//         console.log("Not a prime number");
+//     }else{
+//         console.log("Prime number");
+//     }
+// }
+// }
+
+// 8. Create a function that takes an array and a target number, and returns whether the target exists in the array using a for loop.
+
+
+// for taking the array 
+
+// function for  array target 
+
+// function containsTarget(arr, target){
+//     for(let i = 0 ; i<=arr.lenght  ; i++){
+//         if(arr[i] === target){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+// let num =prompt("Enter number of element you want to add in array");
+// let array = [];
+//     for(let i = 1 ; i<=num ; i++ ) {
+//         array.push(prompt("Enter the element"));
+//     }
+// let targetno = prompt("Enter the target number");
+// console.log(containsTarget([5,5,4,6,7,8],5));
+
+
+// 9. Write a program to generate the multiplication table of a given number using a for loop
+
+
+// function multiplicationTable(num){
+//     for(let i= 1; i<=10 ; i++){
+//         console.log(`${num} * ${i} = ${num*i}`);
+//     }
+// }
+// let no = prompt("Enter a number");
+// multiplicationTable(no);
+
+// 10. Implement a function that removes duplicate elements from an array using a loop.
+
+
+// function duplicationofarray(arr){
+//     let unique =[];
+//     for(let i = 0 ; i<arr.length ; i++){
+//         if(!unique.includes(arr[i])){
+//             unique.push(arr[i]);
+//         }
+//     }
+//     return unique;
+// }
+// let num =prompt("Enter number of element you want to add in array");
+// let array = [];
+//     for(let i = 1 ; i<=num ; i++ ) {
+//         array.push(prompt("Enter the element"));
+//     }
+// console.log(duplicationofarray(array));
+
+// 11. Write a program that counts the number of vowels in a given string using a for...of loop.
+
+// function countVowels(str) {
+// let vowel="aeiouAEIOU";
+// let count = 0;
+
+// for(char of str){
+//     if(vowel.includes(char)){
+//         count++;
+//     }
+// }
+// return count;
+// }
+
+// let str = prompt("Enter a string");
+// console.log(countVowels(str));
+
+
+// 12. Write a function that takes a number and prints if it is positive, negative, or zero using conditional operators.
+
+// function checkNumber(num){
+//     if (num >0){
+//         comnsole.log(num,"is apositive number");
+//     }
+//     if(num < 0){
+//         console.log(num,"is a negetive number");
+//     }
+//     if(num == 0){
+//         console.log(num,"is zero");
+//     }
+// }
+
+// let number = prompt(parseInt("Enter a number"));
+// checkNumber(number);
+
+
+// 13. Implement a switch case statement that takes a day number (1-7) and prints the corresponding day of the week.
+
+// function dayOfWeek(day){
+//     let input = prompt(parseInt("Enter a day number"));
+//     day = parseInt(input);
+//     switch(day){
+//         case 1:
+//             console.log("Sunday");
+//             break;
+//         case 2:
+//             console.log("Monday");
+//             break;
+//         case 3:
+//             console.log("Tuesday");
+//             break;
+//         case 4:
+//             console.log("Wednesday");
+//             break;
+//         case 5:
+//             console.log("Thursday");
+//             break;
+//         case 6:
+//             console.log("Friday");
+//             break;
+//         case 7:
+//             console.log("Saturday");
+//             break;
+//         default:
+//             console.log("Invalid day");
+//     }
+// }
+
+// dayOfWeek();
+
+// 14. Create a program that finds the second largest element in an array using loops and conditional operators.
+
+// function findsecondlargest(arr){
+//     if(arr.length < 2){
+//         return " atleast type 2 elements";
+//     }
+
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
+
+//     for(let i = 0 ; i < arr.length ; i++){
+//        if(arr[i] > largest){
+//               secondLargest = largest;
+//               largest = arr[i];
+//        }
+//        else if(arr[i] > secondLargest && arr[i] != largest){
+//            secondLargest = arr[i];
+//        }
+//     }
+//     return secondLargest === -Infinity ? "No second largest element." : secondLargest;
+
+// }
+
+// let num =prompt("Enter number of element you want to add in array");    
+// let array = [];
+//     for(let i = 1 ; i<=num ; i++ ) {
+//         array.push(prompt("Enter the element"));
+//     }
+// console.log(findsecondlargest(array));
+
+
+// 15. Write a program that takes an integer input and prints whether it is a palindrome using loops.
