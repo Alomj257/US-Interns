@@ -85,14 +85,113 @@
 //     }
 // }
 
-let a = 0;
-let b= 1;
-console.log(a);
-console.log(b);
-let temp;
-for(let i =2; i<10; i++){
-    temp = a+b;
-    console.log(temp);
-    a= b;
-    b= temp;
+
+// 6. Problem
+// let n=5;
+// let fact = 1;
+// while(n>0){
+//     fact *= n;
+//     n--;
+// }
+// console.log(fact)
+
+
+// let flag = 1;
+
+// let n = parseFloat(prompt("Enter a number"));
+// for(let i =2; i<n; i++){
+//     if(n === 2){
+//         console.log(`${n} is a prime number`);
+//     }else if(n%i === 0){
+//         flag = 0;
+//         break;
+//     }else{
+//         flag = 1;
+//         break;
+//     }
+// };
+
+// if(flag === 1){
+//     console.log("Prime");
+// }else{
+//     console.log("Not Prime")
+// }
+
+
+// 8. Problem
+
+
+// function findEle(arr, n) {
+//     let flag;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === n) {
+//             flag = 1;
+//             break;
+//         } else {
+//             flag = 0;
+//         }
+//     }
+//     return flag;
+// }
+
+// let n = parseFloat(prompt("Enter a number"));
+// let arr = [1, 2, 3, 4, 5, 6];
+// let result = findEle(arr, n);
+// if (result === 1) {
+//     console.log("Yes Found ");
+// } else {
+//     console.log("Not found");
+// }
+
+
+
+// const findTarget = (arr, n) => {
+//     let flag;
+//     for(let i =0; i<arr.length; i++){
+//         if(arr[i] === n){
+//             flag = true;
+//             break;
+//         }else{
+//             flag = false;
+//         }
+//     }
+//     return flag;
+// }
+
+// let array = [1,2,3,4,5,6,7];
+// let n = 3;
+// let result = findTarget(array, n);
+// if(result === true){
+//     console.log("Element found")
+// }else{
+//     console.log("Not Found")
+// }
+
+
+// 10.
+
+// Multiplication of 3
+
+// let n = parseFloat(prompt("Enter a number to create multiplication table")); 
+// for(let i =1; i<=10; i++){
+//     console.log(`${n}*${i} = ${n*i}`);
+// }
+
+
+// 15.
+
+const findPlaindrom = (n) => {
+    let strN = n.toString();
+    let revN = '';
+    for(let i = strN.length-1 ; i>=0; i--){
+        revN = revN + strN.charAt(i);
+    }
+
+    // revN = strN.split('').reverse().join)('');
+    return strN === revN
 }
+
+let n = parseFloat(prompt("Enter number"))
+let result = findPlaindrom(n)
+console.log(result);
+
