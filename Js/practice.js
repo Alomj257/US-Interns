@@ -145,24 +145,34 @@
 
 
 
-const findTarget = (arr, n) => {
-    let flag;
-    for(let i =0; i<arr.length; i++){
-        if(arr[i] === n){
-            flag = true;
-            break;
-        }else{
-            flag = false;
-        }
-    }
-    return flag;
-}
+// const findTarget = (arr, n) => {
+//     let flag;
+//     for(let i =0; i<arr.length; i++){
+//         if(arr[i] === n){
+//             flag = true;
+//             break;
+//         }else{
+//             flag = false;
+//         }
+//     }
+//     return flag;
+// }
 
-let array = [1,2,3,4,5,6,7];
-let n = 3;
-let result = findTarget(array, n);
-if(result === true){
-    console.log("Element found")
-}else{
-    console.log("Not Found")
+// let array = [1,2,3,4,5,6,7];
+// let n = 3;
+// let result = findTarget(array, n);
+// if(result === true){
+//     console.log("Element found")
+// }else{
+//     console.log("Not Found")
+// }
+
+
+// 10.
+
+// Multiplication of 3
+
+let n = parseFloat(prompt("Enter a number to create multiplication table")); 
+for(let i =1; i<=10; i++){
+    console.log(`${n}*${i} = ${n*i}`);
 }
