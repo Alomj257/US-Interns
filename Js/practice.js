@@ -85,11 +85,14 @@
 //     }
 // }
 
-
-let febo = [0,1];
-
+let a = 0;
+let b= 1;
+console.log(a);
+console.log(b);
+let temp;
 for(let i =2; i<10; i++){
-    febo[i] = febo[i-1]+febo[i-2];
-    febo.join(febo[i]);
+    temp = a+b;
+    console.log(temp);
+    a= b;
+    b= temp;
 }
-console.log(febo);
