@@ -94,3 +94,22 @@
 //     n--;
 // }
 // console.log(fact)
+let flag = 1;
+let n = parseFloat(prompt("Enter a number"));
+for(let i =2; i<n; i++){
+    if(n === 2){
+        console.log(`${n} is a prime number`);
+    }else if(n%i === 0){
+        flag = 0;
+        break;
+    }else{
+        flag = 1;
+        break;
+    }
+};
+
+if(flag === 1){
+    console.log("Prime");
+}else{
+    console.log("Not Prime")
+}
