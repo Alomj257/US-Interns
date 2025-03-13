@@ -193,4 +193,5 @@ const findPlaindrom = (n) => {
 
 let n = parseFloat(prompt("Enter number"))
 let result = findPlaindrom(n)
-console.log(result)
+console.log(result);
+
