@@ -94,22 +94,51 @@
 //     n--;
 // }
 // console.log(fact)
-let flag = 1;
-let n = parseFloat(prompt("Enter a number"));
-for(let i =2; i<n; i++){
-    if(n === 2){
-        console.log(`${n} is a prime number`);
-    }else if(n%i === 0){
-        flag = 0;
-        break;
-    }else{
-        flag = 1;
-        break;
-    }
-};
 
-if(flag === 1){
-    console.log("Prime");
-}else{
-    console.log("Not Prime")
+
+// let flag = 1;
+
+// let n = parseFloat(prompt("Enter a number"));
+// for(let i =2; i<n; i++){
+//     if(n === 2){
+//         console.log(`${n} is a prime number`);
+//     }else if(n%i === 0){
+//         flag = 0;
+//         break;
+//     }else{
+//         flag = 1;
+//         break;
+//     }
+// };
+
+// if(flag === 1){
+//     console.log("Prime");
+// }else{
+//     console.log("Not Prime")
+// }
+
+
+// 8. Problem
+
+
+function findEle(arr, n) {
+    let flag;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === n) {
+            flag = 1;
+            break;
+        } else {
+            flag = 0;
+        }
+    }
+    return flag;
+}
+
+let n = parseFloat(prompt("Enter a number"));
+let arr = [1, 2, 3, 4, 5, 6];
+let result = findEle(arr, n);
+if (result === 1) {
+    console.log("Yes Found ");
+} else {
+    console.log("Not found");
 }
