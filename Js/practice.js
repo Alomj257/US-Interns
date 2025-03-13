@@ -85,14 +85,12 @@
 //     }
 // }
 
-let a = 0;
-let b= 1;
-console.log(a);
-console.log(b);
-let temp;
-for(let i =2; i<10; i++){
-    temp = a+b;
-    console.log(temp);
-    a= b;
-    b= temp;
-}
+
+// 6. Problem
+// let n=5;
+// let fact = 1;
+// while(n>0){
+//     fact *= n;
+//     n--;
+// }
+// console.log(fact)
