@@ -182,12 +182,12 @@
 //     }
 //     return false;
 // }
-// let num =prompt("Enter number of element you want to add in array");
-// let array = [];
-//     for(let i = 1 ; i<=num ; i++ ) {
-//         array.push(prompt("Enter the element"));
-//     }
-// let targetno = prompt("Enter the target number");
+// // let num =prompt("Enter number of element you want to add in array");
+// // let array = [];
+// //     for(let i = 1 ; i<=num ; i++ ) {
+// //         array.push(prompt("Enter the element"));
+// //     }
+// // let targetno = prompt("Enter the target number");
 // console.log(containsTarget([5,5,4,6,7,8],5));
 
 
