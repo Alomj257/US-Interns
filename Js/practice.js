@@ -121,24 +121,48 @@
 // 8. Problem
 
 
-function findEle(arr, n) {
+// function findEle(arr, n) {
+//     let flag;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === n) {
+//             flag = 1;
+//             break;
+//         } else {
+//             flag = 0;
+//         }
+//     }
+//     return flag;
+// }
+
+// let n = parseFloat(prompt("Enter a number"));
+// let arr = [1, 2, 3, 4, 5, 6];
+// let result = findEle(arr, n);
+// if (result === 1) {
+//     console.log("Yes Found ");
+// } else {
+//     console.log("Not found");
+// }
+
+
+
+const findTarget = (arr, n) => {
     let flag;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === n) {
-            flag = 1;
+    for(let i =0; i<arr.length; i++){
+        if(arr[i] === n){
+            flag = true;
             break;
-        } else {
-            flag = 0;
+        }else{
+            flag = false;
         }
     }
     return flag;
 }
 
-let n = parseFloat(prompt("Enter a number"));
-let arr = [1, 2, 3, 4, 5, 6];
-let result = findEle(arr, n);
-if (result === 1) {
-    console.log("Yes Found ");
-} else {
-    console.log("Not found");
+let array = [1,2,3,4,5,6,7];
+let n = 3;
+let result = findTarget(array, n);
+if(result === true){
+    console.log("Element found")
+}else{
+    console.log("Not Found")
 }
