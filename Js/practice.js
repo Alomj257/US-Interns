@@ -172,7 +172,25 @@
 
 // Multiplication of 3
 
-let n = parseFloat(prompt("Enter a number to create multiplication table")); 
-for(let i =1; i<=10; i++){
-    console.log(`${n}*${i} = ${n*i}`);
+// let n = parseFloat(prompt("Enter a number to create multiplication table")); 
+// for(let i =1; i<=10; i++){
+//     console.log(`${n}*${i} = ${n*i}`);
+// }
+
+
+// 15.
+
+const findPlaindrom = (n) => {
+    let strN = n.toString();
+    let revN = '';
+    for(let i = strN.length-1 ; i>=0; i--){
+        revN = revN + strN.charAt(i);
+    }
+
+    // revN = strN.split('').reverse().join)('');
+    return strN === revN
 }
+
+let n = parseFloat(prompt("Enter number"))
+let result = findPlaindrom(n)
+console.log(result)
