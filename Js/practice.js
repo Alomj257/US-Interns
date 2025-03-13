@@ -73,14 +73,23 @@
 
 // 5. Problem
 
-for(let i =1; i<100; i++){
-    if(i%3 == 0 && i%5 === 0){
-        console.log("FIZZBUZZ")
-    }else if(i%3 === 0){
-        console.log("FIZZ")
-    }else if(i%5 === 0){
-        console.log("Buzz")
-    }else{
-        console.log(i);
-    }
+// for(let i =1; i<100; i++){
+//     if(i%3 == 0 && i%5 === 0){
+//         console.log("FIZZBUZZ")
+//     }else if(i%3 === 0){
+//         console.log("FIZZ")
+//     }else if(i%5 === 0){
+//         console.log("Buzz")
+//     }else{
+//         console.log(i);
+//     }
+// }
+
+
+let febo = [0,1];
+
+for(let i =2; i<10; i++){
+    febo[i] = febo[i-1]+febo[i-2];
+    febo.join(febo[i]);
 }
+console.log(febo);
