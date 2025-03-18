@@ -465,5 +465,19 @@
 // String in js
 // String is a sequence of characters used to represent to a text.
 
-const str = "i am jahangir";
-console.log(str)
+// const str = "i am jahangir";
+// let str1 = "Hello"
+// console.log(str1);
+
+// Stings methods in js
+
+// 1. str.toUppercase();
+
+let str = "I am jahangir";
+console.log(str);
+let upStr = str.toUpperCase();
+console.log(upStr)
+
+// str.toLowerCase();
+let lowStr = str.toLowerCase();
+console.log(lowStr)
