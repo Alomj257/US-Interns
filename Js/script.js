@@ -459,3 +459,11 @@
 //     sum1 = sum1 + student.age;
 // }
 // console.log(sum1)
+
+
+
+// String in js
+// String is a sequence of characters used to represent to a text.
+
+const str = "i am jahangir";
+console.log(str)
