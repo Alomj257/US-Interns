@@ -500,3 +500,39 @@ console.log(slStr)
 for(let i =0; i <slStr.length-1; i++){
     console.log(slStr.charAt(i));
 }
+
+
+
+// 4. str1.concat(str2);
+
+let str1 = "Saugata";
+let str2 = "23";
+let result = str1.concat(str2);
+console.log(result);
+
+
+// 5 . str.replcae(search value, New Value);
+
+let str3 = " Hell o";
+console.log(str3.replace(/[eo]/g, "A"));
+// /[abcd]/g
+
+let name = "Nilay";
+let repName = name.replace("a", "o");
+console.log(repName)
+
+
+// 6 . str.chatAt(index);
+
+let stri = "hThe papaya , papaw, (/pəˈpɔː/ ) or pawpaw (/ˈpɔːpɔː/ ) is the plant species Carica papaya, one of the 21 accepted species in the genus Carica of the family Caricaceae, and also the name of its fruit. It was first domesticated in Mesoamerica, within modern-day southern Mexico and Central America. It is grown in"
+console.log(stri.charAt(67));
+
+
+let a1  = "hello india /o mhnjkgjkgdb";
+let count = 0;
+for(let i =0; a1[i] !== undefined; i++){
+    count ++;
+}
+console.log(count);
+
+console.log(a1.length)
