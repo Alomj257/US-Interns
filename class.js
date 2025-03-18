@@ -66,9 +66,6 @@
 
 
 
-
-
-
 // 1. Write a program to print the first 10 numbers of the Fibonacci sequence using a loop.
 
     // let a = 0 , b = 1 ;
@@ -231,20 +228,20 @@
 
 // 11. Write a program that counts the number of vowels in a given string using a for...of loop.
 
-function countVowels(str) {
-let vowel="aeiouAEIOU";
-let count = 0;
+// function countVowels(str) {
+// let vowel="aeiouAEIOU";
+// let count = 0;
 
-for(char of str){
-    if(vowel.includes(char)){
-        count++;
-    }
-}
-return count;
-}
+// for(char of str){
+//     if(vowel.includes(char)){
+//         count++;
+//     }
+// }
+// return count;
+// }
 
-let str = prompt("Enter a string");
-console.log(countVowels(str));
+// let str = prompt("Enter a string");
+// console.log(countVowels(str));
 
 
 // 12. Write a function that takes a number and prints if it is positive, negative, or zero using conditional operators.
@@ -331,3 +328,84 @@ console.log(countVowels(str));
 
 
 // 15. Write a program that takes an integer input and prints whether it is a palindrome using loops.
+// 15. Write a program that takes an integer input and prints whether it is a palindrome using loops. 
+
+// function ispalindrome(num){
+//     // convert number into string 
+//     let strNum = num.toString();
+//     let lenght = strNum.lenght;
+
+//     // check palindrome using loop
+//     for(let i = 0 ; i<lenght/2 ; i--){
+//         if(strNum[i] !== strNum[lenght -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+//  let number = prompt("Enter a number");
+//  if(ispalindrome(number)){
+//      console.log(`${number} is a palindrome`);
+//  }else{
+//      console.log(`${number} is not a palindrome`);
+//  }
+
+// 16. Implement a function that sorts an array in ascending order using nested loops. 
+
+// function bubbleSort(arr){
+//     let n = arr.length;
+//     for(let i = 0 ; i<n-1 ; i++){
+//         for(let j =0; j<n-1-i ; j++){
+//             if(arr[j] > arr[j + 1]){
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// let number = [5,6,3,8,1,9,2,7,4];
+// console.log(bubbleSort(number));
+
+// 17. Create a program that prints all prime numbers between 1 and 100 using nested loops. 
+
+// function printPrimes(start,end){
+//     console.log(`Prime numbers betwen ${start} and ${end} are:`);
+
+//     for(let num = start ; num<=end ; num++){
+//         if (num < 2){
+//             continue;
+//         }
+//         let isPrime = true;
+//         for(let i = 2; i<=Math.sqrt(num); i++){
+//             if(num % i == 0){
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if(isPrime){
+//             console.log(num);
+//         }
+//     }
+// }
+// num1 = parseInt(prompt("Enter the starting number"));
+// num2 = parseInt(prompt("Enter the ending number"));
+// console.log(printPrimes(num1,num2))
+
+
+// 18. Write a program that checks if a given string is a palindrome using a for loop. 
+// 19. Implement a program that finds the sum of digits of a given number using a while loop
+
+// function sumOfDigits(num){
+//     let sum = 0;
+//     num = Math.abs(num);
+//     while(num> 0){
+//         sum += num % 10;
+//         num = Math.floor(num / 10);
+//     }
+//     return sum;
+// }
+// let number = prompt("Enter a number");
+// console.log(sumOfDigits(number));
