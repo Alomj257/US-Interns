@@ -157,6 +157,9 @@
 // if(num < 2){
 //     console.log("Not a prime number");
 // }
+// else if(num ==2){
+//     console.log("Prime number");
+// }
 // else{
 // for(let i = 2; i<Math.sqrt(num); i++){
 //     if(num % i != 0){
@@ -177,10 +180,13 @@
 // function containsTarget(arr, target){
 //     for(let i = 0 ; i<=arr.lenght  ; i++){
 //         if(arr[i] === target){
-//             return true;
+//             console.log("The target number is in the array");
+//             break;
 //         }
+//         else{
+//             console.log("The target number is not in the array");
+//          }
 //     }
-//     return false;
 // }
 // // let num =prompt("Enter number of element you want to add in array");
 // // let array = [];
@@ -188,7 +194,9 @@
 // //         array.push(prompt("Enter the element"));
 // //     }
 // // let targetno = prompt("Enter the target number");
-// console.log(containsTarget([5,5,4,6,7,8],5));
+// let a = prompt("Enter the no");
+// let result = containsTarget([5,6,56,6,5,4], a);
+// console.log(result);
 
 
 // 9. Write a program to generate the multiplication table of a given number using a for loop
@@ -223,20 +231,20 @@
 
 // 11. Write a program that counts the number of vowels in a given string using a for...of loop.
 
-// function countVowels(str) {
-// let vowel="aeiouAEIOU";
-// let count = 0;
+function countVowels(str) {
+let vowel="aeiouAEIOU";
+let count = 0;
 
-// for(char of str){
-//     if(vowel.includes(char)){
-//         count++;
-//     }
-// }
-// return count;
-// }
+for(char of str){
+    if(vowel.includes(char)){
+        count++;
+    }
+}
+return count;
+}
 
-// let str = prompt("Enter a string");
-// console.log(countVowels(str));
+let str = prompt("Enter a string");
+console.log(countVowels(str));
 
 
 // 12. Write a function that takes a number and prints if it is positive, negative, or zero using conditional operators.
