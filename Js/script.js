@@ -473,11 +473,30 @@
 
 // 1. str.toUppercase();
 
-let str = "I am jahangir";
+let str = "          I      am           jahangir               ";
 console.log(str);
 let upStr = str.toUpperCase();
 console.log(upStr)
 
-// str.toLowerCase();
+// 2. str.toLowerCase();
 let lowStr = str.toLowerCase();
 console.log(lowStr)
+
+// 3. str.trim()
+// Remove white space from starting and ending.
+let trimStr = str.trim();
+console.log(trimStr)
+
+// 4. str.slice(start, end?) Returns a part of a sting
+
+let s = "Hello India";
+let sliStr = s.slice(2,5);
+console.log(sliStr)
+
+
+let string = " This is my js class jghjdgjkdrf jkhfrghjkxb uyruihjkbrmng";
+let slStr = string.slice(11,21);
+console.log(slStr)
+for(let i =0; i <slStr.length-1; i++){
+    console.log(slStr.charAt(i));
+}
