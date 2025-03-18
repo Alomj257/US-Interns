@@ -183,15 +183,22 @@
   
 // 7. Implement a program that checks if a number is prime using a for loop and conditional operators.
 
-// let num = prompt("Enter a number");
-// if(num < 2){
+// let num = parseInt(prompt("Enter a number"));
+
+// if (num < 2) {
 //     console.log("Not a prime number");
-// }
-// for(let i = 2; i<num; i++){
-//     if(num % i == 0){
-//         console.log("Not a prime number");
-//     }else{
+// } else {
+//     let isPrime = true;
+//     for (let i = 2; i < num; i++) {
+//         if (num % i == 0) {
+//             isPrime = false;
+//             break; // Exit the loop if a divisor is found
+//         }
+//     }
+//     if (isPrime) {
 //         console.log("Prime number");
+//     } else {
+//         console.log("Not a prime number");
 //     }
 // }
 
@@ -248,17 +255,218 @@
 
 // 11 .Write a program that counts the number of vowels in a given string using a for...of loop
 
-function countVowels(str) {
-let vowel="aeiouAEIOU";
-let count = 0;
+// function countVowels(str) {
+// let vowel="aeiouAEIOU";
+// let count = 0;
 
-for(char of str){
-    if(vowel.includes(char)){
-        count++;
+// for(char of str){
+//     if(vowel.includes(char)){
+//         count++;
+//     }
+// }
+// return count;
+// }
+
+// let str = prompt("Enter a string");
+// console.log(countVowels(str));
+
+
+// 12. Write a function that takes a number and prints if it is positive, negative, or zero using conditional operators.
+
+// function checkNumber(num){
+//     if (num >0){
+//         comnsole.log(num,"is apositive number");
+//     }
+//     if(num < 0){
+//         console.log(num,"is a negetive number");
+//     }
+//     if(num == 0){
+//         console.log(num,"is zero");
+//     }
+// }
+
+// let number = prompt(parseInt("Enter a number"));
+// checkNumber(number);
+
+
+// 13. Implement a switch case statement that takes a day number (1-7) and prints the corresponding day of the week.
+
+// function dayOfWeek(day){
+//     let input = prompt(parseInt("Enter a day number"));
+//     day = parseInt(input);
+//     switch(day){
+//         case 1:
+//             console.log("Sunday");
+//             break;
+//         case 2:
+//             console.log("Monday");
+//             break;
+//         case 3:
+//             console.log("Tuesday");
+//             break;
+//         case 4:
+//             console.log("Wednesday");
+//             break;
+//         case 5:
+//             console.log("Thursday");
+//             break;
+//         case 6:
+//             console.log("Friday");
+//             break;
+//         case 7:
+//             console.log("Saturday");
+//             break;
+//         default:
+//             console.log("Invalid day");
+//     }
+// }
+
+// dayOfWeek();
+
+// 14. Create a program that finds the second largest element in an array using loops and conditional operators
+
+
+
+// function findsecondlargest(arr){
+//     if(arr.length < 2){
+//         return " atleast type 2 elements";
+//     }
+
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
+
+//     for(let i = 0 ; i < arr.length ; i++){
+//        if(arr[i] > largest){
+//               secondLargest = largest;
+//               largest = arr[i];
+//        }
+//        else if(arr[i] > secondLargest && arr[i] != largest){
+//            secondLargest = arr[i];
+//        }
+//     }
+
+
+
+// 15. Write a program that takes an integer input and prints whether it is a palindrome using loops.
+
+// const findPlaindrom = (n) => {
+//     let strN = n.toString();
+//     let revN = '';
+//     for(let i = strN.length-1 ; i>=0; i--){
+//         revN = revN + strN.charAt(i);
+//     }
+
+//     // revN = strN.split('').reverse().join)('');
+//     return strN === revN
+// }
+
+// let n = parseFloat(prompt("Enter number"))
+// let result = findPlaindrom(n)
+// console.log(result);
+
+// 16.  Implement a function that sorts an array in ascending order using nested loops.
+
+
+// function bubbleSort(arr){
+//     let n = arr.length;
+//     for(let i = 0 ; i<n-1 ; i++){
+//         for(let j =0; j<n-1-i ; j++){
+//             if(arr[j] > arr[j + 1]){
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// let num = prompt("Enter number of elements you want to add in array");
+// let array = [];
+// for(let i = 0 ; i < num ; i++ ) {
+//     array.push(parseFloat(prompt("Enter the element")));
+// }
+// console.log("Original array:", array);
+// console.log("Sorted array:", bubbleSort(array));
+
+
+// 17. Create a program that prints all prime numbers between 1 and 100 using nested loops. 
+
+// function printPrimes(start,end){
+//     console.log(`Prime numbers betwen ${start} and ${end} are:`);
+
+//     for(let num = start ; num<=end ; num++){
+//         if (num < 2){
+//             continue;
+//         }
+//         let isPrime = true;
+//         for(let i = 2; i<=Math.sqrt(num); i++){
+//             if(num % i == 0){
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if(isPrime){
+//             console.log(num);
+//         }
+//     }
+// }
+// num1 = parseInt(prompt("Enter the number you want to start"));
+// num2 = parseInt(prompt("Enter the number you want to end"));
+// printPrimes(num1,num2);
+
+// 18. Write a program that checks if a given string is a palindrome using a for loop. 
+
+// function isPalindrome(str) {
+//     let len = str.length;
+//     for (let i = 0; i < len / 2; i++) {
+//         if (str[i] !== str[len - 1 - i]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// let str = prompt("Enter a string");
+// if (isPalindrome(str)) {
+//     console.log(`${str} is a palindrome`);
+// } else {
+//     console.log(`${str} is not a palindrome`);
+// }
+
+// 19. Implement a program that finds the sum of digits of a given number using a while loop
+
+
+// function sumOfDigits(num) {
+//     let sum = 0;
+//     num = Math.abs(num); 
+//     while (num > 0) {
+//         sum += num % 10;
+//         num = Math.floor(num / 10);
+//     }
+//     return sum;
+// }
+
+// let number = parseInt(prompt("Enter a number"));
+// console.log(`The sum of digits of ${number} is ${sumOfDigits(number)}`);
+
+
+// 20. Write a function that generates the first N numbers of the Fibonacci sequence using a loop and stores them in an array.
+
+
+function generateFibonacci(n) {
+    let fibSequence = [];
+    let a = 0, b = 1;
+    if (n >= 1) fibSequence.push(a);
+    if (n >= 2) fibSequence.push(b);
+    for (let i = 3; i <= n; i++) {
+        let temp = a + b;
+        fibSequence.push(temp);
+        a = b;
+        b = temp;
     }
-}
-return count;
+    return fibSequence;
 }
 
-let str = prompt("Enter a string");
-console.log(countVowels(str));
+let num = parseInt(prompt("Enter the number of Fibonacci numbers to generate"));
+console.log(generateFibonacci(num));
