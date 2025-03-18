@@ -454,19 +454,19 @@
 // 20. Write a function that generates the first N numbers of the Fibonacci sequence using a loop and stores them in an array.
 
 
-function generateFibonacci(n) {
-    let fibSequence = [];
-    let a = 0, b = 1;
-    if (n >= 1) fibSequence.push(a);
-    if (n >= 2) fibSequence.push(b);
-    for (let i = 3; i <= n; i++) {
-        let temp = a + b;
-        fibSequence.push(temp);
-        a = b;
-        b = temp;
-    }
-    return fibSequence;
-}
+// function generateFibonacci(n) {
+//     let fibSequence = [];
+//     let a = 0, b = 1;
+//     if (n >= 1) fibSequence.push(a);
+//     if (n >= 2) fibSequence.push(b);
+//     for (let i = 3; i <= n; i++) {
+//         let temp = a + b;
+//         fibSequence.push(temp);
+//         a = b;
+//         b = temp;
+//     }
+//     return fibSequence;
+// }
 
-let num = parseInt(prompt("Enter the number of Fibonacci numbers to generate"));
-console.log(generateFibonacci(num));
+// let num = parseInt(prompt("Enter the number of Fibonacci numbers to generate"));
+// console.log(generateFibonacci(num));
