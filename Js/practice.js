@@ -180,18 +180,61 @@
 
 // 15.
 
-const findPlaindrom = (n) => {
-    let strN = n.toString();
-    let revN = '';
-    for(let i = strN.length-1 ; i>=0; i--){
-        revN = revN + strN.charAt(i);
+// const findPlaindrom = (n) => {
+//     let strN = n.toString();
+//     let revN = '';
+//     for(let i = strN.length-1 ; i>=0; i--){
+//         revN = revN + strN.charAt(i);
+//     }
+
+//     // revN = strN.split('').reverse().join)('');
+//     return strN === revN
+// }
+
+// let n = parseFloat(prompt("Enter number"))
+// let result = findPlaindrom(n)
+// console.log(result);
+
+// Reverse string
+
+// const revString = (str) => {
+//     let revString = "rigna.j";
+//     for(let i = str.length; i>=0; i--){
+//         revString = revString + str.charAt(i);
+//     }
+//     console.log(revString)
+// }
+
+// let str = "Jahangir";
+// revString(str);
+
+
+// function reverseString (str){
+//     let rev = "";
+//     for(let i = str.length-1; i>=0; i--){
+//         rev += str[i]; // str.chatAt(i), str[i]
+//     }
+//     return rev;
+// }
+
+// console.log(reverseString("JavaScript"))
+
+
+
+// Count ecah character in a string
+
+function countEcahCharacter(str) {
+    let count = {};
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        if (count[char]) {
+            count[char]++;
+        } else {
+            count[char] = 1;
+        }
     }
-
-    // revN = strN.split('').reverse().join)('');
-    return strN === revN
+    return count;
 }
-
-let n = parseFloat(prompt("Enter number"))
-let result = findPlaindrom(n)
-console.log(result);
-
+console.log(countEcahCharacter("aaaaabbbbddd"));
