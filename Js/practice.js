@@ -197,13 +197,24 @@
 
 // Reverse string
 
-const revString = (str) => {
-    let revString = "";
-    for(let i = str.length; i>=0; i--){
-        revString = revString + str.charAt(i);
+// const revString = (str) => {
+//     let revString = "rigna.j";
+//     for(let i = str.length; i>=0; i--){
+//         revString = revString + str.charAt(i);
+//     }
+//     console.log(revString)
+// }
+
+// let str = "Jahangir";
+// revString(str);
+
+
+function reverseString (str){
+    let rev = "";
+    for(let i = str.length-1; i>=0; i--){
+        rev += str[i]; // str.chatAt(i), str[i]
     }
-    console.log(revString)
+    return rev;
 }
 
-let str = "Jahangir";
-revString(str);
+console.log(reverseString("JavaScript"))
