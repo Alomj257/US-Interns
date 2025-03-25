@@ -180,18 +180,30 @@
 
 // 15.
 
-const findPlaindrom = (n) => {
-    let strN = n.toString();
-    let revN = '';
-    for(let i = strN.length-1 ; i>=0; i--){
-        revN = revN + strN.charAt(i);
-    }
+// const findPlaindrom = (n) => {
+//     let strN = n.toString();
+//     let revN = '';
+//     for(let i = strN.length-1 ; i>=0; i--){
+//         revN = revN + strN.charAt(i);
+//     }
 
-    // revN = strN.split('').reverse().join)('');
-    return strN === revN
+//     // revN = strN.split('').reverse().join)('');
+//     return strN === revN
+// }
+
+// let n = parseFloat(prompt("Enter number"))
+// let result = findPlaindrom(n)
+// console.log(result);
+
+// Reverse string
+
+const revString = (str) => {
+    let revString = "";
+    for(let i = str.length; i>=0; i--){
+        revString = revString + str.charAt(i);
+    }
+    console.log(revString)
 }
 
-let n = parseFloat(prompt("Enter number"))
-let result = findPlaindrom(n)
-console.log(result);
-
+let str = "Jahangir";
+revString(str);
