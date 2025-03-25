@@ -209,12 +209,32 @@
 // revString(str);
 
 
-function reverseString (str){
-    let rev = "";
-    for(let i = str.length-1; i>=0; i--){
-        rev += str[i]; // str.chatAt(i), str[i]
-    }
-    return rev;
-}
+// function reverseString (str){
+//     let rev = "";
+//     for(let i = str.length-1; i>=0; i--){
+//         rev += str[i]; // str.chatAt(i), str[i]
+//     }
+//     return rev;
+// }
 
-console.log(reverseString("JavaScript"))
+// console.log(reverseString("JavaScript"))
+
+
+
+// Count ecah character in a string
+
+function countEcahCharacter(str) {
+    let count = {};
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        if (count[char]) {
+            count[char]++;
+        } else {
+            count[char] = 1;
+        }
+    }
+    return count;
+}
+console.log(countEcahCharacter("aaaaabbbbddd"));
