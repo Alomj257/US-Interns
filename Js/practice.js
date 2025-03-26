@@ -223,18 +223,33 @@
 
 // Count ecah character in a string
 
-function countEcahCharacter(str) {
-    let count = {};
+// function countEcahCharacter(str) {
+//     let count = {};
 
-    for (let i = 0; i < str.length; i++) {
-        let char = str[i];
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
 
-        if (count[char]) {
-            count[char]++;
-        } else {
-            count[char] = 1;
-        }
+//         if (count[char]) {
+//             count[char]++;
+//         } else {
+//             count[char] = 1;
+//         }
+//     }
+//     return count;
+// }
+// console.log(countEcahCharacter("aaaaabbbbddd"));
+
+
+// str = "jahangir alom electronics" "Jahangir Alom Electronics"  Capitalize first letter of each word
+
+const capWord = (str) => {
+    let words = str.split(" ");
+    for(let i =0; i<words.length; i++){
+        words[i] = words[i][0].toUpperCase()+words[i].slice(1);
     }
-    return count;
+    return words.join(" ");
 }
-console.log(countEcahCharacter("aaaaabbbbddd"));
+
+
+let string = "i am indian student";
+console.log(capWord(string));
