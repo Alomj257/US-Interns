@@ -411,3 +411,19 @@
 // console.log(sumOfDigits(number));
 
 
+
+function countCharacters(str) {
+    let charCount = {};
+    
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+    
+    return charCount;
+}
+
+// Example usage
+const inputString = "hello world";
+console.log(countCharacters(inputString));
+
+
