@@ -412,18 +412,26 @@
 
 
 
-function countCharacters(str) {
-    let charCount = {};
+// function countCharacters(str) {
+//     let charCount = {};
     
-    for (let char of str) {
-        charCount[char] = (charCount[char] || 0) + 1;
+//     for (let char of str) {
+//         charCount[char] = (charCount[char] || 0) + 1;
+//     }
+    
+//     return charCount;
+// }
+
+// // Example usage
+// const inputString = "hello world";
+// console.log(countCharacters(inputString));
+
+const upper = (str) => {
+    let words = str.split(" ");
+    for(let i =0; i<words.length; i++){
+        words[i] = words[i][0].toUpperCase()+words[i].slice(1);
     }
-    
-    return charCount;
+    return words.join(" ");
 }
-
-// Example usage
-const inputString = "hello world";
-console.log(countCharacters(inputString));
-
-
+let niloy = "i am niloy";
+console.log(upper(niloy));
