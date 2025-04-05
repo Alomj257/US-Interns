@@ -426,12 +426,61 @@
 // const inputString = "hello world";
 // console.log(countCharacters(inputString));
 
-const upper = (str) => {
-    let words = str.split(" ");
-    for(let i =0; i<words.length; i++){
-        words[i] = words[i][0].toUpperCase()+words[i].slice(1);
-    }
-    return words.join(" ");
-}
-let niloy = "i am niloy";
-console.log(upper(niloy));
+// const upper = (str) => {
+//     let words = str.split(" ");
+//     for(let i =0; i<words.length; i++){
+//         words[i] = words[i][0].toUpperCase()+words[i].slice(1);
+//     }
+//     return words.join(" ");
+// }
+// let niloy = "i am niloy";
+// console.log(upper(niloy));
+
+// sum = 0
+// for(let i = 0; i<=5 ; i++){
+//     sum +=i
+// }
+// console.log(`The sum is ${sum}`);
+
+
+// let i=1;
+// sum =0;
+// while(i<=5){
+//     sum += i;
+//     i++;
+// }
+// console.log(`The sum is ${sum}`)
+
+
+// let student = {
+//     name : "Niloy Kundu",
+//     class : "BCA",
+//     rollno : 21,
+// }
+
+// for(let key in student){
+//     console.log(`${key} and the value  is ${student[key]}`)
+// }
+
+// print all the even number from 0 - 100
+
+// for(let i = 0;i<=100;i++){
+//     if(i%2 == 0){
+//         console.log(i)
+//     }
+// }
+
+
+// // create a game 
+// let gameNum = 25;
+// let userNum = parseInt(prompt("Guess the number:"))
+
+// while( gameNum !== userNum){
+//     userNum = parseInt(prompt("You have guessed wrong number.Guess the number again:"))
+// }
+// console.log(`Congratulation you have entered ${userNum} which is the correct one`)
+
+
+// let userName = prompt("Enter your name:")
+// userName = "@" + userName.toLowerCase() + userName.length
+// console.log(`Your username is ${userName}`)
