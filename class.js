@@ -484,3 +484,51 @@
 // let userName = prompt("Enter your name:")
 // userName = "@" + userName.toLowerCase() + userName.length
 // console.log(`Your username is ${userName}`)
+
+
+// sum and average 
+
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// let sum = 0;
+
+// for( let i in arr){
+//     sum += arr[i]
+// }
+// let avg = sum / arr.length;
+// console.log(`The sum is ${sum}`)
+// console.log(`The average is ${avg}`)
+
+
+// discount the offer price of 10% from the each element of array 
+
+// arr = [100,200,300,400,500]
+// console.log(`The original price is ${arr}`)
+// for(let i in arr){
+//     arr[i] = arr[i] - (arr[i] * 0.1)
+// }
+// console.log(`price after discount is ${arr}`)
+
+
+// Now uppercase the 1t alphabet of each element of array
+
+// arr = ["niloy","kundu","bca","intern"]
+
+// for(let i in arr){
+//     arr[i] = arr[i][0].toUpperCase() +arr[i].slice(1)
+// }
+// console.log(arr)
+
+
+// lets practice with company names 
+
+company = ["TCS","Wipro","Infosys","Accenture","Cognizant"]
+console.log(`The company names are ${company}`)
+
+company.splice(0,1)
+console.log(`The company names are ${company}`)
+
+company.splice(0,1,"Google")
+console.log(`The company names are ${company}`)
+
+company.push("Microsoft")
+console.log(`The company names are ${company}`)
