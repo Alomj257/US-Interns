@@ -521,14 +521,73 @@
 
 // lets practice with company names 
 
-company = ["TCS","Wipro","Infosys","Accenture","Cognizant"]
-console.log(`The company names are ${company}`)
+// company = ["TCS","Wipro","Infosys","Accenture","Cognizant"]
+// console.log(`The company names are ${company}`)
 
-company.splice(0,1)
-console.log(`The company names are ${company}`)
+// company.splice(0,1)
+// console.log(`The company names are ${company}`)
 
-company.splice(0,1,"Google")
-console.log(`The company names are ${company}`)
+// company.splice(0,1,"Google")
+// console.log(`The company names are ${company}`)
 
-company.push("Microsoft")
-console.log(`The company names are ${company}`)
+// company.push("Microsoft")
+// console.log(`The company names are ${company}`)
+
+// create an function using function keyword to check the number of vowel in a string 
+
+// function countVowels(str){
+//     let vowels = "aeiouAEIOU";
+//     let count = 0;
+//     for(let i=0; i<str.length ; i++){
+//         if(vowels.includes(str[i])){
+//             count ++ ;
+//         }
+//     }
+//     console.log(`The number of vowels in ${str} is ${count}`)
+//     return count;
+// }
+
+// let str = prompt("Enter a string")
+// countVowels(str);
+
+// in a array print the each value of array using forEach method
+
+// arr = [1,2,3,4,5,6,7,8,9,10]
+
+// arr.forEach(function square(val){
+//     console.log(val**2)
+// });
+
+
+// there is an array with student exam numbers filter out the number which is 90+
+
+// num = [90,65,95,105,78,88,99,100,101,102]
+
+// let filterNUm = num.filter((val)=>{
+//     return val >=90;
+// })
+// console.log(`The number which is greater than 90 is ${filterNUm}`)
+
+
+// take an n number from user and insert number 1 to n in an array 
+
+
+let n = prompt("Enter a number")
+let arr = [];
+
+for(i = 1; i<=n ; i++){
+    arr.push(i);
+}
+console.log(arr);
+
+let sumArr = arr.reduce((result,val) =>{
+    return result + val ;
+})
+
+console.log(sumArr)
+
+let mulArr = arr.reduce((result,val) =>{
+    return result * val ;
+})
+
+console.log(mulArr)
