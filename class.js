@@ -572,22 +572,26 @@
 // take an n number from user and insert number 1 to n in an array 
 
 
-let n = prompt("Enter a number")
-let arr = [];
+// let n = prompt("Enter a number")
+// let arr = [];
 
-for(i = 1; i<=n ; i++){
-    arr.push(i);
-}
-console.log(arr);
+// for(i = 1; i<=n ; i++){
+//     arr.push(i);
+// }
+// console.log(arr);
 
-let sumArr = arr.reduce((result,val) =>{
-    return result + val ;
-})
+// let sumArr = arr.reduce((result,val) =>{
+//     return result + val ;
+// })
 
-console.log(sumArr)
+// console.log(sumArr)
 
-let mulArr = arr.reduce((result,val) =>{
-    return result * val ;
-})
+// let mulArr = arr.reduce((result,val) =>{
+//     return result * val ;
+// })
 
-console.log(mulArr)
+// console.log(mulArr)
+
+
+let h1 = document.querySelector("h1");
+h1.innertext = h1.innertext + " Niloy Kundu";
