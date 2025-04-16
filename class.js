@@ -593,5 +593,18 @@
 // console.log(mulArr)
 
 
-let h1 = document.querySelector("h1");
-h1.innertext = h1.innertext + " Niloy Kundu";
+let H1 = document.querySelector("h1");
+H1.innertext = "Niloy Kundu";
+console.log(H1.innertext)
+
+
+let btn = document.createElement("button");
+btn.innerText = "CLick Me!";
+btn.style.color  = "white";
+btn.style.backgroundColor = "blue";
+
+document.body.appendChild(btn);
+
+p = document.querySelector("p");
+p.classList.add("para2")
+console.log(p.getAttribute("class"))
