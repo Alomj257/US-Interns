@@ -593,18 +593,37 @@
 // console.log(mulArr)
 
 
-let H1 = document.querySelector("h1");
-H1.innertext = "Niloy Kundu";
-console.log(H1.innertext)
+// let H1 = document.querySelector("h1");
+// H1.innertext = "Niloy Kundu";
+// console.log(H1.innertext)
 
 
-let btn = document.createElement("button");
-btn.innerText = "CLick Me!";
-btn.style.color  = "white";
-btn.style.backgroundColor = "blue";
+// let btn = document.createElement("button");
+// btn.innerText = "CLick Me!";
+// btn.style.color  = "white";
+// btn.style.backgroundColor = "blue";
 
-document.body.appendChild(btn);
+// document.body.appendChild(btn);
 
-p = document.querySelector("p");
-p.classList.add("para2")
-console.log(p.getAttribute("class"))
+// p = document.querySelector("p");
+// p.classList.add("para2")
+// console.log(p.getAttribute("class"))
+
+
+let btn  = document.querySelector("button");
+let mode = "light";
+
+btn.addEventListener("click",()=>{
+    if(mode == "light"){
+       mode = "dark";
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        btn.innerText = "Light Mode" 
+    }
+    else{
+        mode = "light";
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        btn.innerText = "Dark Mode"
+    }
+})
